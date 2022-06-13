@@ -117,23 +117,23 @@
 	font: inherit;
 	font-size: 14px;
 	font-weight: normal;
-	color:  #d1d2d2;
+	color:  #ffffff;
 
 	width: 400px;
 	padding: 18px;
 }
 
 .footer-distributed ::-webkit-input-placeholder {
-	color:  #ffffff;
+	color:  #b0abab;
 }
 
 .footer-distributed ::-moz-placeholder {
-	color:  #ffffff;
+	color:  #b0abab;
 	opacity: 1;
 }
 
 .footer-distributed :-ms-input-placeholder{
-	color:  #ffffff;
+	color:  #b0abab;
 }
 
 
