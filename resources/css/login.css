@@ -1,0 +1,353 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	margin:0;
+	color:#97979b;
+	 background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font:600 16px/18px 'Open Sans',sans-serif;
+}
+*,:after,:before{
+    box-sizing:border-box
+}
+.clearfix:after,.clearfix:before{
+    content:'';
+    display:table
+}
+.clearfix:after{
+    clear:both;
+    display:block
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+
+
+
+
+.nav-bar{
+  background-color: #0e6010;
+  width: 100%;
+  margin-top: 0px;
+}
+.nav-hold{
+  display:block;
+  width: 98%;
+}
+.nav-logo{
+  float: left;
+  display: block;
+  padding: 5px 60px 7px 10px;
+  width: 170px;
+  height: 100px;
+  font-weight: 600;
+}
+.nav-logo a{
+  color: #f9f9f9;
+}
+.nav-items{
+  padding: 10px 2px 7px 2px;
+  float: right
+}
+.nav-items li{
+  display:block;
+  float: left;
+  padding: 15px 20px;
+  margin-left:10px;
+  
+}
+.nav-items li a {
+  color: #f9f9f9;
+  border-radius: 5px;
+  
+}
+.nav-items li:hover {
+  /*background: rgb(104, 156, 19);*/
+  /*background: linear-gradient(35deg, rgb(39, 133, 26) 40%, rgb(88, 177, 36) 72%);*/
+  background:rgba(102, 230, 85, 0.808);
+  transition: ease-in 0.4s;
+  border-radius: 5px;
+  
+}
+.nav-items li a:hover {
+  
+  transition: ease-in 0.5s;
+  border-radius: 5px;
+  
+}
+.nav-hold{
+  overflow:hidden;
+}
+.nav-menu{
+  display: none;
+}
+
+/*media Queries*/
+@media screen and (max-width: 768px){
+    .nav-menu{
+      display: block;
+      float: right;
+      padding: 10px 20px;
+      cursor: pointer;
+      color: #fff;
+    }
+    .nav-items{
+      width: 100%;
+      float: left;
+      height: 0px;
+      padding:0px;
+      margin:0px;
+      
+    }
+    .nav-items li{
+      width: 100%;
+      display: block;
+    }  
+}
+.nav-open{
+    height: auto;
+}
+
+
+  
+a.scroll-top {
+  color: #fff;
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 50px;
+  right: 30px;
+  font-size: 20px;
+  background: #222;
+  border-radius: 3px !important;
+  text-align: center;
+  border: 1px solid hsla(0, 0%, 78%, 0.3)
+}
+a.scroll-top i {
+  position: relative;
+  top: 5px;
+}
+
+
+
+
+
+
+
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+	box-shadow:0 0 5px 5px rgba(252, 252, 252, 0.708),0 17px 50px 0 rgba(172, 172, 172, 0.756);
+
+  border-radius: 10px;
+  border-width: 3px;
+
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(36, 17, 17, 0.86);
+
+  border-color: rgb(1, 1, 1);
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:rgba(255, 255, 255, 0.61);
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:6px;
+	background:rgba(168, 168, 168, 0.288);
+}
+.login-form .group input[data-type="password"]{
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:rgb(255, 255, 255);
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#681313;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#600e0e;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+
+
+
+
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255, 255, 255, 0.61);
+}
+.foot-lnk{
+	text-align:center;
+}
+
+
+
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px ) {
+  .hide {       
+      display: none;
+  }
+  body{
+      height:102.5vh;
+      width: 100vw;
+      justify-content:center;
+  }
+  .login-wrap{
+    width: 395px;
+    height: 395px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+}
+
+
+

@@ -1,3 +1,4 @@
+<?php require_once '../php/authController.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDGSGamers</title>
-    <link rel="shortcut icon" href="../resources/img/logo.png" />
+    <link rel="shortcut icon" href="../img/logo.png" />
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="../resources/css/navbar.css">
-    <link rel="stylesheet" href="../resources/css/carrusel.css">
-    <link rel="stylesheet" href="../resources/css/footer.css">
-    
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -20,15 +21,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
 
     <!----===== SCRIPT ===== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
 
 </head>
 <body>
+    
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
-                <img src="../resources/img/logo.png" alt="">
+                <img src="../img/logo.png" alt="">
                 </span>
 
                 <div class="text logo-text">
@@ -50,7 +53,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="../../public/index.php">
                             <i class='fas fa-home icon'></i>
                             <span class="text nav-text">Inicio</span>
                         </a>
@@ -90,7 +93,7 @@
 
             <div class="bottom-content">
                 <li class="">
-                    <a href="../resources/views/login.php">
+                    <a href="#">
                         <i class='fas fa-user-circle icon'></i>
                         <span class="text nav-text">Iniciar Sesion</span>
                     </a>
@@ -115,67 +118,100 @@
 
     <section class="home">
 
-        <div class="contenedor">
-          <div class="slider-contenedor">
-              <section class="contenido-slider">
-                  <div>
-                      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
-                          sed. Quos cupiditate id delectus est.</h2>
-                      <a href="#">Contact us</a>
-                  </div>
-                  <img src="../resources/img/juegos.jpg" alt="">
-  
-              </section>
-              <section class="contenido-slider">
-                  <div>
-                      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
-                          sed. Quos cupiditate id delectus est.</h2>
-                      <a href="#">Contact us</a>
-                  </div>
-                  <img src="../resources/img/xbox.jpg" alt="">
-  
-              </section>
-          <section class="contenido-slider">
-              <div>
-                <h1>Play Station</h1>
-                  <h2>PlayStation es una consola de videojuegos enfocada en los jugadores con un diseño impresionante que 
-                    cumple con lo que promete, ser un juego de sobremesa con exclusivos únicos.</h2>
-                  <a href="https://www.playstation.com/es-mx/">Sitio Oficial</a>
-              </div>
-              <img src="../resources/img/ps.jpg" alt="">
-  
-          </section>
-          <section class="contenido-slider">
-              <div>
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
-                      sed. Quos cupiditate id delectus est.</h2>
-                  <a href="#">Contact us</a>
-              </div>
-              <img src="../resources/img/pc.jpg" alt="">
-  
-          </section>
-          <section class="contenido-slider">
-            <div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
-                    sed. Quos cupiditate id delectus est.</h2>
-                <a href="#">Contact us</a>
-            </div>
-            <img src="../resources/img/juegos.jpg" alt="">
+<br class="hide">
+<br class="hide">
+<br class="hide">
 
-        </section>
-      </div>
-      </div>
-      <script src="../resources/js/carrusel.js"></script>
-<br><br><br><br><br><br>
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar Sesion</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
+            <div class="login-form">
+
+                <form action="sesion.php" method="POST">
+                <div class="sign-in-htm">
+
+                    <?php if(count($errors) > 0): ?>
+                    <div class="alert alert-danger">
+                        <?php foreach($errors as $error):?>
+                        <li><?php echo $error;?></li>
+                        <?php endforeach;?>
+                    </div>
+                    <?php endif;?>
+
+                    <div class="group">
+                        <label for="user" class="label">Usuario / Correo Electronico</label>
+                        <input id="user" name="user" type="text" class="input"  maxlength="100" >
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Contraseña</label>
+                        <input id="pass" name="pass" type="password" class="input" data-type="password" maxlength="25" >
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Mantener sesion iniciada</label>
+                    </div>
+                    <div class="group">
+                        <input type="submit" name="login" class="button" value="Iniciar Sesion">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-2">No Tienes Cuenta?</a>
+                    </div>
+                </div>
+                </form>
+
+                <form action="sesion.php" method="POST">
+                <div class="sign-up-htm">
+
+                    <?php if(count($errors) > 0): ?>
+                    <div class="alert alert-danger">
+                        <?php foreach($errors as $error):?>
+                        <li><?php echo $error;?></li>
+                        <?php endforeach;?>
+                    </div>
+                    <?php endif;?>
+                    
+                    <div class="group">
+                        <label for="usuario" class="label">Usuario</label>
+                        <input id="user" value="<?php echo $username; ?>" name="user" type="text" class="input" pattern="[a-zA-Z0-9]+" minlength="5" maxlength="25" >
+                    </div>
+                    <div class="group">
+                        <label for="email" class="label">Correo Electronico</label>
+                        <input id="email" value="<?php echo $email; ?>" name="email" type="text" class="input" maxlength="100">
+                    </div>
+                    <div class="group">
+                        <label for="pass1" class="label">Contraseña</label>
+                        <input id="pass1" name="pass" type="password" class="input" data-type="password" minlength="8" maxlength="25">
+                    </div>
+                    <div class="group">
+                        <label for="pass2" class="label">Confirmar Contraseña</label>
+                        <input id="pass2" name="passConf" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input type="submit" name="register" class="button" value="Registrarse">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Ya Tienes Cuenta?</a>
+                    </div>
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>    
+
+<br><br><br><br>
 <hr/>
 <footer class="footer-distributed">
 
         <div class="footer-left">
   
-          <img class="logof" src="../resources/img/logo.png" alt="">
+          <img class="logof" src="../img/logo.png" alt="">
   
           <p class="footer-links">
-            <a href="index.php">Inicio</a>
+            <a href="../../public/index.php">Inicio</a>
             ·
             <a href="#">Nosotros</a>
             ·
