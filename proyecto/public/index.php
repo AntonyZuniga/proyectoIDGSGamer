@@ -1,3 +1,4 @@
+<?php require_once '../resources/php/authController.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +44,7 @@
         <div class="menu-bar">
             <div class="menu">
 
-                <li class="search-box">
+                <li class="search-box" style="display: none">
                     <i class='bx bx-search icon'></i>
                     <input type="text" placeholder="Search...">
                 </li>
@@ -89,12 +90,23 @@
             </div>
 
             <div class="bottom-content">
-                <li class="">
-                    <a href="../resources/views/login.php">
-                        <i class='fas fa-user-circle icon'></i>
-                        <span class="text nav-text">Iniciar Sesion</span>
-                    </a>
-                </li>
+
+                <li><a href="../resources/views/info.php">
+                <i class='fas fa-user-circle icon'></i>
+                <span class="text nav-text">
+
+
+                <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo $_SESSION['Usuario'];
+                    }else{
+                    echo 'Iniciar Sesion';
+                    }
+                ?>
+
+                
+                </span>
+                </a></li>
 
                 <li class="mode">
                     <div class="sun-moon">
@@ -116,7 +128,7 @@
     <section class="home">
 
         <div class="contenedor">
-          <div class="slider-contenedor">
+          <div class="slider-contenedor" >
               <section class="contenido-slider">
                   <div>
                   <h1>Nintendo</h1>
@@ -206,11 +218,14 @@
   
           <form action="#" method="post">
   
-            <input type="text" name="email" placeholder="Correo Electrónico">
+            <input type="email" name="email" placeholder="Correo Electrónico">
             <textarea name="message" placeholder="Mensaje"></textarea>
-            <button>Enviar</button>
-  
-          </form>
+            <button type="submit" name="register">Enviar</button>
+          </form><br><br>
+            <?php 
+            include("../resources/php/ac.php");
+            ?>
+            
   
         </div>
   

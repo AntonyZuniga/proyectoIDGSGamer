@@ -46,7 +46,7 @@
         <div class="menu-bar">
             <div class="menu">
 
-                <li class="search-box">
+                <li class="search-box" style="display: none">
                     <i class='bx bx-search icon'></i>
                     <input type="text" placeholder="Search...">
                 </li>
@@ -92,12 +92,23 @@
             </div>
 
             <div class="bottom-content">
-                <li class="">
-                    <a href="#">
-                        <i class='fas fa-user-circle icon'></i>
-                        <span class="text nav-text">Iniciar Sesion</span>
-                    </a>
-                </li>
+                
+            <li><a href="info.php">
+                <i class='fas fa-user-circle icon'></i>
+                <span class="text nav-text">
+
+
+                <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo $_SESSION['Usuario'];
+                    }else{
+                    echo 'Iniciar Sesion';
+                    }
+                ?>
+
+                
+                </span>
+            </a></li>
 
                 <li class="mode">
                     <div class="sun-moon">
@@ -128,7 +139,7 @@
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
             <div class="login-form">
 
-                <form action="sesion.php" method="POST">
+                <form action="login.php" method="POST">
                 <div class="sign-in-htm">
 
                     <?php if(count($errors) > 0): ?>
@@ -156,12 +167,11 @@
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
-                        <label for="tab-2">No Tienes Cuenta?</a>
                     </div>
                 </div>
                 </form>
 
-                <form action="sesion.php" method="POST">
+                <form action="login.php" method="POST">
                 <div class="sign-up-htm">
 
                     <?php if(count($errors) > 0): ?>
@@ -193,7 +203,6 @@
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
-                        <label for="tab-1">Ya Tienes Cuenta?</a>
                     </div>
                 </div>
 
@@ -238,11 +247,14 @@
   
           <form action="#" method="post">
   
-            <input type="text" name="email" placeholder="Correo Electrónico">
+            <input type="email" name="email" placeholder="Correo Electrónico">
             <textarea name="message" placeholder="Mensaje"></textarea>
-            <button>Enviar</button>
-  
-          </form>
+            <button type="submit" name="register">Enviar</button>
+          </form><br><br>
+            <?php 
+            include("../php/ac.php");
+            ?>
+            
   
         </div>
   
