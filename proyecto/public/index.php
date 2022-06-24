@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
 
     <!----===== SCRIPT ===== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -38,7 +39,7 @@
                 </div>
             </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
+            <i class='bx bx-chevron-right toggle boton'></i>
         </header>
 
         <div class="menu-bar">
@@ -57,28 +58,28 @@
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link xbox">
+                        <a href="../resources/views/xbox.php">
                             <i class='fab fa-xbox icon'></i>
                             <span class="text nav-text">Xbox</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <li class="nav-link ps">
                         <a href="#">
                             <i class='fab fa-playstation icon'></i>
                             <span class="text nav-text">Play Station</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <li class="nav-link pc">
                         <a href="#">
                             <i class='fab fa-steam icon'></i>
                             <span class="text nav-text">PC</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <li class="nav-link nintendo">
                         <a href="#">
                             <i class='fas fa-gamepad icon'></i>
                             <span class="text nav-text">Nintendo</span>
@@ -129,12 +130,12 @@
 
         <div class="contenedor">
           <div class="slider-contenedor" >
-              <section class="contenido-slider">
+              <section class="contenido-slider ">
                   <div>
                   <h1>Nintendo</h1>
                         <h2>La gran Nintendo, la compañía enfocada en consolas portátiles pisa fuerte con la Nintendo Switch, una consola 
                             que combina lo mejor de la sobremesa y la portabilidad, trayendo innovación a esta nueva generación.</h2>
-                        <a href="https://www.nintendo.com/es-mx/">Sitio Oficial</a>
+                        <a class="hfondo" href="https://www.nintendo.com/es-mx/">Sitio Oficial</a>
                   </div>
                   <img src="../resources/img/juegos.jpg" alt="">
   
@@ -144,17 +145,17 @@
                   <h1>Xbox</h1>
                       <h2>Xbox la gran compañía verde es la competencia directa de Play Station, una consola potente siendo la
                            mejor en rendimiento de esta generación, es la consola con pocos exclusivos pero que son de calidad.</h2>
-                      <a href="https://www.xbox.com/es-MX">Sitio Oficial</a>
+                      <a class="hfondo" href="https://www.xbox.com/es-MX">Sitio Oficial</a>
                   </div>
                   <img src="../resources/img/xbox.jpg" alt="">
   
               </section>
-          <section class="contenido-slider">
+                <section class="contenido-slider">
               <div>
                 <h1>Play Station</h1>
                   <h2>Play Station es una consola de videojuegos enfocada en los jugadores con un diseño impresionante que 
                     cumple con lo que promete, ser un juego de sobremesa con exclusivos únicos.</h2>
-                  <a href="https://www.playstation.com/es-mx/">Sitio Oficial</a>
+                  <a class="hfondo" href="https://www.playstation.com/es-mx/">Sitio Oficial</a>
               </div>
               <img src="../resources/img/ps.jpg" alt="">
   
@@ -164,22 +165,22 @@
               <h1>PC</h1>
                   <h2>Si lo tuyo no son las consolas, la PC es tu mejor opción, siendo una de las mejores herramientas versátiles 
                       y con buena potencia en base a sus componentes, teniendo disponibilidad de muchos videojuegos.</h2>
-                  <a href="https://store.steampowered.com/?l=spanish">Sitio Oficial</a>
+                  <a class="hfondo" href="https://store.steampowered.com/?l=spanish">Sitio Oficial</a>
               </div>
               <img src="../resources/img/pc.jpg" alt="">
   
-          </section>
-          <section class="contenido-slider">
+                </section>
+                    <section class="contenido-slider">
             <div>
-            <h1>Nintendo</h1>
+                    <h1>Nintendo</h1>
                 <h2>La gran Nintendo, la compañía enfocada en consolas portátiles pisa fuerte con la Nintendo Switch, una consola 
                     que combina lo mejor de la sobremesa y la portabilidad, trayendo innovación a esta nueva generación.</h2>
-                <a href="https://www.nintendo.com/es-mx/">Sitio Oficial</a>
+                <a class="hfondo" href="https://www.nintendo.com/es-mx/">Sitio Oficial</a>
             </div>
             <img src="../resources/img/juegos.jpg" alt="">
 
         </section>
-      </div>
+            </div>
       </div>
       <script src="../resources/js/carrusel.js"></script>
 <br><br><br><br><br><br>
@@ -203,10 +204,11 @@
   
           <div class="footer-icons">
   
-            <a href="https://www.facebook.com/"><i class='fab fa-facebook-square'></i></a>
-            <a href="https://twitter.com/"><i class='fab fa-twitter'></i></i></a>
-            <a href="https://github.com/"><i class='fab fa-github'></i></i></a>
-            <a href="https://store.steampowered.com/?l=spanish"><i class='fab fa-steam'></i></i></a>
+            
+            <a class="tooltip" href="https://www.facebook.com/"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
+            <a class="tooltip" href="https://twitter.com/"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
+            <a class="tooltip" href="https://github.com/"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
+            <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
   
           </div>
   
@@ -218,7 +220,25 @@
   
           <form action="#" method="post">
   
-            <input type="email" name="email" placeholder="Correo Electrónico">
+                
+
+            <input type="email" name="email" placeholder="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo '';
+                    }else{
+                    echo 'Correo Electronico';
+                    }
+                ?>"
+                
+                value="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                        echo $_SESSION['Correo'];
+                    }else{
+                    echo '';
+                    }
+                ?>"
+                >
+            </input>
             <textarea name="message" placeholder="Mensaje"></textarea>
             <button type="submit" name="register">Enviar</button>
           </form><br><br>

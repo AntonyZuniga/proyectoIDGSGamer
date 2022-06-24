@@ -59,29 +59,29 @@
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link xbox">
+                        <a href="xbox.php">
                             <i class='fab fa-xbox icon'></i>
                             <span class="text nav-text">Xbox</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link ps">
+                        <a href="ps.php">
                             <i class='fab fa-playstation icon'></i>
                             <span class="text nav-text">Play Station</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link pc">
+                        <a href="pc.php">
                             <i class='fab fa-steam icon'></i>
                             <span class="text nav-text">PC</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link nintendo">
+                        <a href="nintendo.php">
                             <i class='fas fa-gamepad icon'></i>
                             <span class="text nav-text">Nintendo</span>
                         </a>
@@ -232,10 +232,12 @@
   
           <div class="footer-icons">
   
-            <a href="#"><i class='fab fa-facebook-square'></i></a>
-            <a href="#"><i class='fab fa-twitter'></i></i></a>
-            <a href="#"><i class='fab fa-github'></i></i></a>
-            <a href="#"><i class='fab fa-steam'></i></i></a>
+             
+          <a class="tooltip" href="https://www.facebook.com/"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
+            <a class="tooltip" href="https://twitter.com/"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
+            <a class="tooltip" href="https://github.com/"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
+            <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
+  
   
           </div>
   
@@ -247,7 +249,25 @@
   
           <form action="#" method="post">
   
-            <input type="email" name="email" placeholder="Correo Electrónico">
+                
+
+            <input type="email" name="email" placeholder="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo '';
+                    }else{
+                    echo 'Correo Electronico';
+                    }
+                ?>"
+                
+                value="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                        echo $_SESSION['Correo'];
+                    }else{
+                    echo '';
+                    }
+                ?>"
+                >
+            </input>
             <textarea name="message" placeholder="Mensaje"></textarea>
             <button type="submit" name="register">Enviar</button>
           </form><br><br>
