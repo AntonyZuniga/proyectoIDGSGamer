@@ -1,18 +1,34 @@
-<?php require_once '../php/authController.php';?>
+<?php  
+require_once '../php/authController.php'; 
+
+    if(isset($_GET['token'])) {
+        $token = $_GET['token'];
+        verifyUser($token);
+    }
+
+    if (!isset($_SESSION['Id_Usuario'])){
+        header('Location: login.php');
+        exit();
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDGSGamers</title>
+
+    <title>perfil</title>
     <link rel="shortcut icon" href="../img/logo.png" />
-    
+
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/titulos.css">
-    
+
+
+    <link rel="stylesheet" type="text/css" href="../css/info.css">
+
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -26,7 +42,8 @@
 
 </head>
 <body>
-    <nav class="sidebar close">
+
+<nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
@@ -39,7 +56,7 @@
                 </div>
             </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
+            <i class='bx bx-chevron-right toggle boton'></i>
         </header>
 
         <div class="menu-bar">
@@ -66,7 +83,7 @@
                     </li>
 
                     <li class="nav-link ps">
-                        <a href="#">
+                        <a href="ps.php">
                             <i class='fab fa-playstation icon'></i>
                             <span class="text nav-text">Play Station</span>
                         </a>
@@ -99,7 +116,7 @@
 
             <div class="bottom-content">
 
-                <li><a href="../views/info.php">
+                <li><a href="#">
                 <i class='fas fa-user-circle icon'></i>
                 <span class="text nav-text">
 
@@ -132,124 +149,51 @@
         </div>
 
     </nav>
-    <a href="#" class="fas fa-arrow-alt-circle-up icon scroll-top" title="Ir arriba"></a>
-    
+
     <section class="home">
 
-    <div class='recuadro' id="cero">
-    <p class="t2"><a href="">
-    PLAY STATION
-  </a></p>
-	</div>
+<br class="hide">
+<br class="hide">
+<br class="hide">
 
-    <div class='recuadro' id="uno">
-        <h1 style="text-align:center">Texto info</h1>
-	</div>
-    <hr>
-	<div class='recuadro' id="dos">
-        <h1 style="text-align:center">COMENTARIOS</h1>
-        <br>
-        <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-                        if($usuario){
-                        echo "
-
-                        <div id='disqus_thread'></div>
-                        <script>
-    
-                        (function() {
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://idgsgamers.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                        })();
-                        </script>
-                        
-                        
-                        ";
-                        }else{
-                            echo '
-                            <h3 style="text-align:center">Debes iniciar sesion para dar tu reseñas</h3>
-                            <br>
-                            <a class="hfondo2" href="login.php">Iniciar Sesion</a>
-                        ';
-                        }
-        ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 form-div login">
+                
+            
+            
+            <?php if(isset($_SESSION['message'])): ?>
+                <div class="alert <?php echo $_SESSION['alert-class'];?>">
+                    <?php 
+                    echo $_SESSION['message'];
+                    unset($_SESSION['message']);
+                    unset($_SESSION['alert-class']);
+                    ?>
+                </div>
+                <?php endif;?>
+            
+                <h3>Bienvenido, <?php echo $_SESSION['Usuario']; ?></h3>
+                <br>
+                <h4>Correo: <?php echo $_SESSION['Correo']; ?></h4>
+                <br><br>
+                <div class="group">
+                    <a role="button" href="login.php?logout=1" class="btn btn-enlace">Salir</a>
+                </div>
+                <div class="group">
+                    <a role="button" href="../../public/index.php" class="btn btn-enlace">Continuar</a>
+                </div>
+                
+                
+           
+            <!--?logout=1-->
+            </div>
+        </div>
     </div>
-	<div class='recuadro' id="tres">
-    <h1 style="text-align:center">SITIOS OFICIALES</h1>
 
-
-	</div>    
-
+    <br><br><br><br>
 <hr/>
-<footer class="footer-distributed">
 
-        <div class="footer-left">
-  
-          <img class="logof" src="../img/logo.png" alt="">
-  
-          <p class="footer-links">
-            <a href="../../public/index.php">Inicio</a>
-            ·
-            <a href="#">Nosotros</a>
-            ·
-            <a href="#">Acerca de la página</a>
-            
-          </p>
-  
-          <p class="footer-company-name">IDGSGamers © 2022</p>
-  
-          <div class="footer-icons">
-   
-            <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
-            <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
-            <a class="tooltip" href="https://github.com/"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
-            <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
-  
-          </div>
-  
-        </div>
-  
-        <div class="footer-right">
-  
-          <p>Contactanos</p>
-  
-          <form action="#" method="post">
-  
-                
-
-            <input type="email" name="email" placeholder="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-                    if($usuario){
-                    echo 'Correo Electronico';
-                    }else{
-                    echo 'Correo Electronico';
-                    }
-                ?>"
-                
-                value="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-                    if($usuario){
-                        echo $_SESSION['Correo'];
-                    }else{
-                    echo '';
-                    }
-                ?>"
-                >
-            </input>
-            <textarea name="message" placeholder="Mensaje"></textarea>
-            <button type="submit" name="register">Enviar</button>
-          </form><br><br>
-            <?php 
-            include("../php/ac.php");
-            ?>
-            
-  
-        </div>
-  
- </footer>
     </section>
-    
-
-    
 
     <script>
         const body = document.querySelector('body'),
@@ -280,8 +224,5 @@ modeSwitch.addEventListener("click" , () =>{
 });
     </script>
 
-<script language="JavaScript" type="text/javascript" src="../js/arriba.js"></script>
-
 </body>
-
 </html>
