@@ -154,7 +154,7 @@
 <section class="categories">
     <div class="title-container">
         <h1 id="title">CATALOGO</h1>
-        <button class="fas fa-cart-arrow-down icon" type="button" id="cart">CARRITO</button>
+        <button class="fas fa-cart-arrow-down icon boton" type="button" id="cart">  CARRITO</button>
     </div>
     <div class="card">
         <div class="item-container" id="0">
@@ -211,7 +211,7 @@
                 <h4 id="detail-price">Price : Rs 9,999</h4>
                 <p id="spec"><strong>Información :</strong>
 
-                    <ul>
+                    <ul id="detail-info">
                         <li>13MP AI triple main camera + 2MP bokeh (depth of field) camera + 2MP macro camera with photo, video, professional mode panorama, portrait, time-lapse etc. | 16MP front punch hole camera</li>
 
                         <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </li>
@@ -229,7 +229,7 @@
     <!-- cart list section -->
 <div id="cart-container">
     
-<button style="text-align:right; padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon" type="button" id="logo">REGRESAR</button>
+<button style="position: absolute;right: 3%; padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon boton" type="button" id="logo">  REGRESAR</button>
     <p id="cart-title">Tu <strong>Carrito</strong></p id="cart-title">
     <div id="empty-cart">
         <h1>Tu carrito esta vacio...</h1>

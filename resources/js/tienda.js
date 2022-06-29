@@ -5,6 +5,7 @@ const data= [
         name : 'FORZA Horizon',
         price : 1299,
         delievery : 'In 3 - 4 days',
+        info : 'HOLA',
         itemInCart: false
     },
     {
@@ -13,6 +14,7 @@ const data= [
         name : 'Spiderman',
         price : 1499,
         delievery : 'In 3 - 4 days',
+        info : 'HOLA 2',
         itemInCart: false
     },
     {
@@ -21,6 +23,7 @@ const data= [
         name : 'League of Legends',
         price : 0.1,
         delievery : 'In 3 - 4 days',
+        info : 'HOLA',
         itemInCart: false
     },
     {
@@ -29,6 +32,7 @@ const data= [
         name : 'Super Mario Oddisey',
         price : 899,
         delievery : 'In 3 - 4 days',
+        info : 'HOLA',
         itemInCart: false
     },
     
@@ -42,6 +46,9 @@ var detailsImg = document.getElementById('details-img')
 var detailTitle = document.getElementById('detail-title')
 var detailPrice = document.getElementById('detail-price')
 var detailsPage = document.getElementById('details-page');
+
+var detailInfo = document.getElementById('detail-info')
+
 var back = document.getElementById('buy')
 back.addEventListener('click',refreshPage)
 var addToCarts = document.querySelectorAll('#add-to-cart')
@@ -85,6 +92,7 @@ function handleDetail(e){
     getId= this.parentNode.id;
     detailsImg.src= data[getId].img;
     detailTitle.innerHTML=   data[getId].name;
+    detailInfo.innerHTML= data[getId].info;
     detailPrice.innerHTML= 'Precio : $ ' +data[getId].price;
 }
 
@@ -180,8 +188,8 @@ function addItem(){
             cartCont.appendChild(tempCart)
             
         })
-        document.getElementById('total-amount').innerHTML = 'Total Amount : $ ' + totalAmount;
-        document.getElementById('total-items').innerHTML = 'Total Items : ' + totalItems;
+        document.getElementById('total-amount').innerHTML = 'Cantidad Total : $ ' + totalAmount;
+        document.getElementById('total-items').innerHTML = 'Articulos Totales : ' + totalItems;
         document.getElementById('total').style.display= "block";
 }
 
