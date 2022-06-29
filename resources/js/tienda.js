@@ -5,7 +5,7 @@ const data= [
         name : 'FORZA Horizon',
         price : 1299,
         delievery : 'In 3 - 4 days',
-        info : 'HOLA',
+        info : '<br> Forza Horizon 5 es la quinta parte de la saga de conducción en mundo abierto de Microsoft y PlayGround Games. Trasladándonos a un enorme mapeado que recrea Reino Unido casi en su totalidad, la nueva entrega apuesta por incluir más coches, más eventos y competiciones, mejorar los gráficos y ofrecer un sistema de estaciones en tiempo real que nos ofrece la posibilidad de pilotar en verano, otoño, invierno y primavera. Está disponible en Xbox One. <br><br><hr>',
         itemInCart: false
     },
     {
@@ -14,7 +14,7 @@ const data= [
         name : 'Spiderman',
         price : 1499,
         delievery : 'In 3 - 4 days',
-        info : 'HOLA 2',
+        info : '<br> Spider-Man para PS4 es un videojuego de acción y aventuras con un estilo jugable de mundo abierto, que permite al jugador desplazarse de un lugar a otro con total libertad de movimientos y que tiene por escenario donde de desarrolla la historia, la ciudad de Nueva York. El juego está desarrollado por Imsomniac Games, creadores de juegos como Spyro, Ratchet & Clank o Sunset Overdrive, entre otros y además está producido por Sony como videojuego exclusivo de PlayStation 4. <br><br><hr>',
         itemInCart: false
     },
     {
@@ -23,7 +23,7 @@ const data= [
         name : 'League of Legends',
         price : 0.1,
         delievery : 'In 3 - 4 days',
-        info : 'HOLA',
+        info : '<br>  League of Legends es un juego de estrategia por equipos en el que dos equipos de cinco campeones se enfrentan para ver quién destruye antes la base del otro. Elige de entre un elenco de 140 campeones para realizar jugadas épicas, asesinar rivales y derribar torretas para alzarte con la victoria.<br><br><hr>',
         itemInCart: false
     },
     {
@@ -32,7 +32,7 @@ const data= [
         name : 'Super Mario Oddisey',
         price : 899,
         delievery : 'In 3 - 4 days',
-        info : 'HOLA',
+        info : '<br> Super Mario Odyssey es un videojuego desarrollado, producido y distribuido por Nintendo exclusivamente para su nueva videoconsola, Nintendo Switch. <br><br> Mario regresa a los videojuegos con su primer gran título para Nintendo Switch. En esta ocasión lo hace con un juego en 3D de mundo abierto que recuerda en estética y jugabilidad a lo visto en Super Mario 64 o los juegos de la serie en Game Cube, pero que además incluye una gran cantidad de novedades, los mejores gráficos de la saga e interesantes mecánicas jugables como la gorra, la cual tendrá un gran protagonismo y ofrecerá diversas funcionalidades como ayudarnos a recorrer el escenario o la capacidad de controlar a los enemigos, obteniendo así increíbles y variadas habilidades. <br><br><hr>',
         itemInCart: false
     },
     

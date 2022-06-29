@@ -145,116 +145,124 @@
 	</div>
 
     
+
+
     <div class='recuadro' id="uno">
-<a href="#" ><i ></i></a>
-        <!-- main section -->
-<main id="main" >
 
-<!-- all categories -->
-<section class="categories">
-    <div class="title-container">
-        <h1 id="title">CATALOGO</h1>
-        <button class="fas fa-cart-arrow-down icon boton" type="button" id="cart">  CARRITO</button>
-    </div>
-    <div class="card">
-        <div class="item-container" id="0">
-            <div class="card-item">
-                <img src="../img/fh.png" alt="img" id="card-img">
-                <p id="item-name">FORZA Horizon</p>
-            </div>
-            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
-            <h3 id="item-price">Precio : $ 1299</h3>               
-        </div>
+    <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo '
+                    
+                    <!-- main section -->
+                    <main id="main" >
+                    
+                    <!-- all categories -->
+                    <section class="categories">
+                        <div class="title-container">
+                            <h1 id="title">CATALOGO</h1>
+                            <button class="fas fa-cart-arrow-down icon boton" type="button" id="cart">  CARRITO</button>
+                        </div>
+                        <div class="card">
+                            <div class="item-container" id="0">
+                                <div class="card-item">
+                                    <img src="../img/fh.png" alt="img" id="card-img">
+                                    <p id="item-name">FORZA Horizon</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 1299</h3>               
+                            </div>
+                    
+                            <div class="item-container" id="1">
+                                <div class="card-item" >
+                                    <img src="../img/sm.png" alt="img" id="card-img">
+                                    <p id="item-name">Spiderman</p>              
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 1499</h3>
+                            </div>
+                    
+                            <div class="item-container" id="2">
+                                <div class="card-item" >
+                                    <img src="../img/lol.png" alt="img" id="card-img">
+                                    <p id="item-name">League of Legends</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 0.1</h3>                
+                            </div>
+                    
+                            <div class="item-container" id="3">
+                                <div class="card-item">
+                                    <img src="../img/mo.png" alt="img" id="card-img">
+                                    <p id="item-name">Super Mario Oddisey                </p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 899</h3>            
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    </main>
+                    <!-- end of main -->
+                    <!-- details page section -->
+                    <div id="details-page">
+                        <div class="details">
+                            <div class="items-detail">
+                                <div class="image-container">
+                                    
+                                    <img src="/images/redmiK20.jpg" alt="" id="details-img">
+                                </div>
+                                <div class="details-card">
+                                    <h2 id="detail-title"></h2>
+                                    <h4 id="detail-price"></h4>
+                                    <p id="spec"><strong><hr><br>Información :</strong>
+                    
+                                        <ul id="detail-info">
+                                            </ul>
+                                    </p>
+                                    <button id="carts">Añadir al carrito</button>
+                                    <button id="buy">Regresar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of page detail -->
+                        <!-- cart list section -->
+                    <div id="cart-container">
+                        
+                    <button style="position: absolute;right: 3%; padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon boton" type="button" id="logo">  REGRESAR</button>
+                        <p id="cart-title">Tu <strong>Carrito</strong></p id="cart-title">
+                        <div id="empty-cart">
+                            <h1>Tu carrito esta vacio...</h1>
+                        </div>
+                    
+                        <div id="cart-with-items">
+                            <div class="cart-column">
+                                <h3>Producto</h3>
+                                <h3>Nombre del producto</h3>
+                                <h3>Total </h3>
+                                <h3>Cantidad</h3>
+                                <h3>Eliminar</h3>
+                            </div>
+                            <div id="item-body">
+                            </div>
+                            <div id="total">
+                                <h3 id="total-items"></h3>
+                                <h2 id="total-amount"></h2>
+                                <h3 id="you-saved"></h3>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        
+                        ';
+                    }else{
+                    echo 'Debes iniciar sesion para ver el catalogo de VideoJuegos!';
+                    }
+                ?>
+        
 
-        <div class="item-container" id="1">
-            <div class="card-item" >
-                <img src="../img/sm.png" alt="img" id="card-img">
-                <p id="item-name">Spiderman</p>              
-            </div>
-            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
-            <h3 id="item-price">Precio : $ 1499</h3>
-        </div>
-
-        <div class="item-container" id="2">
-            <div class="card-item" >
-                <img src="../img/lol.png" alt="img" id="card-img">
-                <p id="item-name">League of Legends</p>
-            </div>
-            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
-            <h3 id="item-price">Precio : $ 0.1</h3>                
-        </div>
-
-        <div class="item-container" id="3">
-            <div class="card-item">
-                <img src="../img/mo.png" alt="img" id="card-img">
-                <p id="item-name">Super Mario Oddisey                </p>
-            </div>
-            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
-            <h3 id="item-price">Precio : $ 899</h3>            
-        </div>
-    </div>
-</section>
-
-
-</main>
-<!-- end of main -->
-<!-- details page section -->
-<div id="details-page">
-    <div class="details">
-        <div class="items-detail">
-            <div class="image-container">
-                
-                <img src="/images/redmiK20.jpg" alt="" id="details-img">
-            </div>
-            <div class="details-card">
-                <h2 id="detail-title">Samsung Galaxy</h2>
-                <h4 id="detail-price">Price : Rs 9,999</h4>
-                <p id="spec"><strong>Información :</strong>
-
-                    <ul id="detail-info">
-                        <li>13MP AI triple main camera + 2MP bokeh (depth of field) camera + 2MP macro camera with photo, video, professional mode panorama, portrait, time-lapse etc. | 16MP front punch hole camera</li>
-
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </li>
-
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime reiciendis laborum! Velit odit molestias architecto doloremque est sapiente. </li>
-                    </ul>
-                </p>
-                <button id="carts">Añadir al carrito</button>
-                <button id="buy">Regresar</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end of page detail -->
-    <!-- cart list section -->
-<div id="cart-container">
-    
-<button style="position: absolute;right: 3%; padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon boton" type="button" id="logo">  REGRESAR</button>
-    <p id="cart-title">Tu <strong>Carrito</strong></p id="cart-title">
-    <div id="empty-cart">
-        <h1>Tu carrito esta vacio...</h1>
-    </div>
-
-    <div id="cart-with-items">
-        <div class="cart-column">
-            <h3>Producto</h3>
-            <h3>Nombre del producto</h3>
-            <h3>Total </h3>
-            <h3>Cantidad</h3>
-            <h3>Eliminar</h3>
-        </div>
-        <div id="item-body">
-        </div>
-        <div id="total">
-            <h3 id="total-items"></h3>
-            <h2 id="total-amount"></h2>
-            <h3 id="you-saved"></h3>
-        </div>
-    </div>
-</div>
-    </div>
-
-	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
 
 <hr/>
 
@@ -278,7 +286,7 @@
    
             <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
             <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
-            <a class="tooltip" href="https://github.com/"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
+            <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
             <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
   
           </div>
