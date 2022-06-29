@@ -35,6 +35,12 @@
     font-size:9em;
     margin:0px 0 0px 0;
   }
+  
+  .t6{
+    text-align:center;
+    font-size:9em;
+    margin:0px 0 0px 0;
+  }
 
   a{
     text-decoration:none;
@@ -92,6 +98,16 @@
     -moz-animation: neon5 1.5s ease-in-out infinite alternate;
     animation: neon5 1.5s ease-in-out infinite alternate;
   }
+
+  .t6:nth-child(1) a{
+    color:#000000;
+    font-family:Iceland;
+  }
+  .t6:nth-child(1) a:hover{
+    -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+    animation: neon6 1.5s ease-in-out infinite alternate;
+  }
   
   .t a:hover{
   color:#ffffff;
@@ -113,6 +129,10 @@
     color:#ffffff;
   }
   
+  .t6 a:hover{
+    color:#ffffff;
+  }
+
   /*glow for webkit-ket-frames*/
   @-webkit-keyframes neon1 {
     from {
@@ -226,6 +246,29 @@
                  0 0 40px #8f0000,
                  0 0 50px #8f0000,
                  0 0 75px #8f0000;
+    }
+  }
+
+  @-webkit-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #000000,
+                 0 0 70px  #000000,
+                 0 0 80px  #000000,
+                 0 0 100px #000000,
+                 0 0 150px #000000;
+    }
+    to {
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #000000,
+                 0 0 35px #000000,
+                 0 0 40px #000000,
+                 0 0 50px #000000,
+                 0 0 75px #000000;
     }
   }
 
@@ -344,6 +387,30 @@
                  0 0 75px #8f0000;
     }
   }
+
+  @-moz-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #000000,
+                 0 0 70px  #000000,
+                 0 0 80px  #000000,
+                 0 0 100px #000000,
+                 0 0 150px #000000;
+    }
+    to {
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #000000,
+                 0 0 35px #000000,
+                 0 0 40px #000000,
+                 0 0 50px #000000,
+                 0 0 75px #000000;
+    }
+  }
+
   
   
   /*glow*/
@@ -459,6 +526,29 @@
                  0 0 40px #8f0000,
                  0 0 50px #8f0000,
                  0 0 75px #8f0000;
+    }
+  }
+
+  @keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #000000,
+                 0 0 70px  #000000,
+                 0 0 80px  #000000,
+                 0 0 100px #000000,
+                 0 0 150px #000000;
+    }
+    to {
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #000000,
+                 0 0 35px #000000,
+                 0 0 40px #000000,
+                 0 0 50px #000000,
+                 0 0 75px #000000;
     }
   }
   

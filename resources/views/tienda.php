@@ -146,7 +146,6 @@
 
     
     <div class='recuadro' id="uno">
-    <h1 style="text-align:center">CATALOGO</h1>
 <a href="#" ><i ></i></a>
         <!-- main section -->
 <main id="main" >
@@ -154,7 +153,7 @@
 <!-- all categories -->
 <section class="categories">
     <div class="title-container">
-        <h1 id="title">Latest Phones</h1>
+        <h1 id="title">CATALOGO</h1>
         <button class="fas fa-cart-arrow-down icon" type="button" id="cart">CARRITO</button>
     </div>
     <div class="card">
@@ -271,9 +270,7 @@
           <p class="footer-links">
             <a href="../../public/index.php">Inicio</a>
             ·
-            <a href="#">Nosotros</a>
-            ·
-            <a href="#">Acerca de la página</a>
+            <a href="politica.php">Politica de Privacidad</a>
             
           </p>
   

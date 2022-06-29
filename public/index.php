@@ -263,11 +263,9 @@
           <img class="logof" src="../resources/img/logo.png" alt="">
   
           <p class="footer-links">
-            <a href="index.php">Inicio</a>
+            <a href="#">Inicio</a>
             ·
-            <a href="#">Nosotros</a>
-            ·
-            <a href="#">Acerca de la página</a>
+            <a href="../resources/views/politica.php">Politica de Privacidad</a>
             
           </p>
   

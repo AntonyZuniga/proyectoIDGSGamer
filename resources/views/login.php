@@ -226,9 +226,7 @@
           <p class="footer-links">
             <a href="../../public/index.php">Inicio</a>
             ·
-            <a href="#">Nosotros</a>
-            ·
-            <a href="#">Acerca de la página</a>
+            <a href="politica.php">Politica de Privacidad</a>
             
           </p>
   
