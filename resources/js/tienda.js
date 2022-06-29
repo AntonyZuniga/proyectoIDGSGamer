@@ -1,68 +1,37 @@
 const data= [
     {
         id : 0,
-        img : '/images/redmiK20.jpg',
-        name : 'Redmi K20',
-        price : 190,
+        img : '../img/fh.png',
+        name : 'FORZA Horizon',
+        price : 1299,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
     {
         id : 1,
-        img : '/images/samGalaxynote20.jpg',
-        name : 'Samsung Galaxy Note 20',
-        price : 300,
+        img : '../img/sm.png',
+        name : 'Spiderman',
+        price : 1499,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
     {
         id : 2,
-        img : '/images/oppofindX2.jpg',
-        name : 'OPPO Find X2',
-        price : 240,
+        img : '../img/lol.png',
+        name : 'League of Legends',
+        price : 0.1,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
     {
         id : 3,
-        img : '/images/realmeX20pro.jpg',
-        name : 'Realme X50 Pro',
-        price : 285,
+        img : '../img/mo.png',
+        name : 'Super Mario Oddisey',
+        price : 899,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
-    {
-        id : 4,
-        img : '/images/redminote8.jpg',
-        name : 'Redmi Note 8',
-        price : 200,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 5,
-        img : '/images/redminote9.jpg',
-        name : 'Redmi Note 9',
-        price : 220,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 6,
-        img : '/images/redmi8.jpg',
-        name : 'Redmi 8A Dual',
-        price : 160,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 7,
-        img : '/images/redmi9.jpg',
-        name : 'Redmi 9',
-        price : 100,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
+    
 ];
 
 let cartList=[]; //array to store cart lists

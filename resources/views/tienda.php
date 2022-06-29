@@ -159,38 +159,38 @@
     <div class="card">
         <div class="item-container" id="0">
             <div class="card-item">
-                <img src="/images/redmiK20.jpg" alt="img" id="card-img">
-                <p id="item-name">Redmi K20 (Flame Red, 6GB RAM, 128GB Storage)</p>
+                <img src="../img/fh.png" alt="img" id="card-img">
+                <p id="item-name">FORZA Horizon</p>
             </div>
             <i class="fa fa-shopping-cart" id="add-to-cart"></i>
-            <h3 id="item-price">Price : $ 190</h3>               
+            <h3 id="item-price">Precio : $ 1299</h3>               
         </div>
 
         <div class="item-container" id="1">
             <div class="card-item" >
-                <img src="/images/samGalaxynote20.jpg" alt="img" id="card-img">
-                <p id="item-name">Samsung Galaxy Note 20 Ultra 5G</p>              
+                <img src="../img/sm.png" alt="img" id="card-img">
+                <p id="item-name">Spiderman</p>              
             </div>
             <i class="fa fa-shopping-cart" id="add-to-cart"></i>
-            <h3 id="item-price">Price : $ 300</h3>
+            <h3 id="item-price">Precio : $ 1499</h3>
         </div>
 
         <div class="item-container" id="2">
             <div class="card-item" >
-                <img src="/images/oppofindX2.jpg" alt="img" id="card-img">
-                <p id="item-name">OPPO Find X2 (Ocean, 12GB RAM, 256GB Storage)</p>
+                <img src="../img/lol.png" alt="img" id="card-img">
+                <p id="item-name">League of Legends</p>
             </div>
             <i class="fa fa-shopping-cart" id="add-to-cart"></i>
-            <h3 id="item-price">Price : $ 240</h3>                
+            <h3 id="item-price">Precio : $ 0.1</h3>                
         </div>
 
         <div class="item-container" id="3">
             <div class="card-item">
-                <img src="/images/realmeX20pro.jpg" alt="img" id="card-img">
-                <p id="item-name">Realme X50 Pro (Moss Green, 12GB RAM, 256GB Storage)                </p>
+                <img src="../img/mo.png" alt="img" id="card-img">
+                <p id="item-name">Super Mario Oddisey                </p>
             </div>
             <i class="fa fa-shopping-cart" id="add-to-cart"></i>
-            <h3 id="item-price">Price : $ 285</h3>            
+            <h3 id="item-price">Precio : $ 899</h3>            
         </div>
     </div>
 </section>
@@ -209,9 +209,7 @@
             <div class="details-card">
                 <h2 id="detail-title">Samsung Galaxy</h2>
                 <h4 id="detail-price">Price : Rs 9,999</h4>
-                <p id="you-save">You save : (Rs 4,000)</p>
-                <p id="delievery"><strong>Delivery : </strong> In 3 - 4 days</p>
-                <p id="spec"><strong>Specification :</strong>
+                <p id="spec"><strong>Información :</strong>
 
                     <ul>
                         <li>13MP AI triple main camera + 2MP bokeh (depth of field) camera + 2MP macro camera with photo, video, professional mode panorama, portrait, time-lapse etc. | 16MP front punch hole camera</li>
@@ -221,8 +219,8 @@
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime reiciendis laborum! Velit odit molestias architecto doloremque est sapiente. </li>
                     </ul>
                 </p>
-                <button id="carts">Add to Cart</button>
-                <button id="buy">Back</button>
+                <button id="carts">Añadir al carrito</button>
+                <button id="buy">Regresar</button>
             </div>
         </div>
     </div>
@@ -231,19 +229,19 @@
     <!-- cart list section -->
 <div id="cart-container">
     
-<button style="padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon" type="button" id="logo">REGRESAR</button>
-    <p id="cart-title">Your <strong>Cart</strong></p id="cart-title">
+<button style="text-align:right; padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon" type="button" id="logo">REGRESAR</button>
+    <p id="cart-title">Tu <strong>Carrito</strong></p id="cart-title">
     <div id="empty-cart">
-        <h1>Your Cart is Empty...</h1>
+        <h1>Tu carrito esta vacio...</h1>
     </div>
 
     <div id="cart-with-items">
         <div class="cart-column">
-            <h3>Product</h3>
-            <h3>Product Name</h3>
+            <h3>Producto</h3>
+            <h3>Nombre del producto</h3>
             <h3>Total </h3>
-            <h3>Quantity</h3>
-            <h3>Remove</h3>
+            <h3>Cantidad</h3>
+            <h3>Eliminar</h3>
         </div>
         <div id="item-body">
         </div>
