@@ -1,68 +1,41 @@
 const data= [
     {
         id : 0,
-        img : '/images/redmiK20.jpg',
-        name : 'Redmi K20',
-        price : 190,
+        img : '../img/fh.png',
+        name : 'FORZA Horizon',
+        price : 1299,
         delievery : 'In 3 - 4 days',
+        info : '<br> Forza Horizon 5 es la quinta parte de la saga de conducción en mundo abierto de Microsoft y PlayGround Games. Trasladándonos a un enorme mapeado que recrea Reino Unido casi en su totalidad, la nueva entrega apuesta por incluir más coches, más eventos y competiciones, mejorar los gráficos y ofrecer un sistema de estaciones en tiempo real que nos ofrece la posibilidad de pilotar en verano, otoño, invierno y primavera. Está disponible en Xbox One. <br><br><hr>',
         itemInCart: false
     },
     {
         id : 1,
-        img : '/images/samGalaxynote20.jpg',
-        name : 'Samsung Galaxy Note 20',
-        price : 300,
+        img : '../img/sm.png',
+        name : 'Spiderman',
+        price : 1499,
         delievery : 'In 3 - 4 days',
+        info : '<br> Spider-Man para PS4 es un videojuego de acción y aventuras con un estilo jugable de mundo abierto, que permite al jugador desplazarse de un lugar a otro con total libertad de movimientos y que tiene por escenario donde de desarrolla la historia, la ciudad de Nueva York. El juego está desarrollado por Imsomniac Games, creadores de juegos como Spyro, Ratchet & Clank o Sunset Overdrive, entre otros y además está producido por Sony como videojuego exclusivo de PlayStation 4. <br><br><hr>',
         itemInCart: false
     },
     {
         id : 2,
-        img : '/images/oppofindX2.jpg',
-        name : 'OPPO Find X2',
-        price : 240,
+        img : '../img/lol.png',
+        name : 'League of Legends',
+        price : 0.1,
         delievery : 'In 3 - 4 days',
+        info : '<br>  League of Legends es un juego de estrategia por equipos en el que dos equipos de cinco campeones se enfrentan para ver quién destruye antes la base del otro. Elige de entre un elenco de 140 campeones para realizar jugadas épicas, asesinar rivales y derribar torretas para alzarte con la victoria.<br><br><hr>',
         itemInCart: false
     },
     {
         id : 3,
-        img : '/images/realmeX20pro.jpg',
-        name : 'Realme X50 Pro',
-        price : 285,
+        img : '../img/mo.png',
+        name : 'Super Mario Oddisey',
+        price : 899,
         delievery : 'In 3 - 4 days',
+        info : '<br> Super Mario Odyssey es un videojuego desarrollado, producido y distribuido por Nintendo exclusivamente para su nueva videoconsola, Nintendo Switch. <br><br> Mario regresa a los videojuegos con su primer gran título para Nintendo Switch. En esta ocasión lo hace con un juego en 3D de mundo abierto que recuerda en estética y jugabilidad a lo visto en Super Mario 64 o los juegos de la serie en Game Cube, pero que además incluye una gran cantidad de novedades, los mejores gráficos de la saga e interesantes mecánicas jugables como la gorra, la cual tendrá un gran protagonismo y ofrecerá diversas funcionalidades como ayudarnos a recorrer el escenario o la capacidad de controlar a los enemigos, obteniendo así increíbles y variadas habilidades. <br><br><hr>',
         itemInCart: false
     },
-    {
-        id : 4,
-        img : '/images/redminote8.jpg',
-        name : 'Redmi Note 8',
-        price : 200,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 5,
-        img : '/images/redminote9.jpg',
-        name : 'Redmi Note 9',
-        price : 220,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 6,
-        img : '/images/redmi8.jpg',
-        name : 'Redmi 8A Dual',
-        price : 160,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 7,
-        img : '/images/redmi9.jpg',
-        name : 'Redmi 9',
-        price : 100,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
+    
 ];
 
 let cartList=[]; //array to store cart lists
@@ -73,6 +46,9 @@ var detailsImg = document.getElementById('details-img')
 var detailTitle = document.getElementById('detail-title')
 var detailPrice = document.getElementById('detail-price')
 var detailsPage = document.getElementById('details-page');
+
+var detailInfo = document.getElementById('detail-info')
+
 var back = document.getElementById('buy')
 back.addEventListener('click',refreshPage)
 var addToCarts = document.querySelectorAll('#add-to-cart')
@@ -116,6 +92,7 @@ function handleDetail(e){
     getId= this.parentNode.id;
     detailsImg.src= data[getId].img;
     detailTitle.innerHTML=   data[getId].name;
+    detailInfo.innerHTML= data[getId].info;
     detailPrice.innerHTML= 'Precio : $ ' +data[getId].price;
 }
 
@@ -211,8 +188,8 @@ function addItem(){
             cartCont.appendChild(tempCart)
             
         })
-        document.getElementById('total-amount').innerHTML = 'Total Amount : $ ' + totalAmount;
-        document.getElementById('total-items').innerHTML = 'Total Items : ' + totalItems;
+        document.getElementById('total-amount').innerHTML = 'Cantidad Total : $ ' + totalAmount;
+        document.getElementById('total-items').innerHTML = 'Articulos Totales : ' + totalItems;
         document.getElementById('total').style.display= "block";
 }
 

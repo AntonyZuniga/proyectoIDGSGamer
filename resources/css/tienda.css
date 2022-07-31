@@ -438,3 +438,9 @@ footer{
         margin-top: 1rem;
     }
 }
+
+.boton{
+    background: #681313;
+    color: #fff;
+    border-radius: 10px;
+}
