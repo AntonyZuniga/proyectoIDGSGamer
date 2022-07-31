@@ -43,13 +43,19 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   .t7{
     text-align:center;
     font-size:5em;
     margin:0px 0 0px 0;
   }
 
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
 >>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   a{
     text-decoration:none;
@@ -118,7 +124,10 @@
     animation: neon6 1.5s ease-in-out infinite alternate;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
 
   .t7:nth-child(1) a{
     color:#000000;
@@ -129,6 +138,9 @@
     -moz-animation: neon7 1.5s ease-in-out infinite alternate;
     animation: neon7 1.5s ease-in-out infinite alternate;
   }
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
 >>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   
   .t a:hover{
@@ -156,11 +168,17 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   .t7 a:hover{
     color:#ffffff;
   }
 
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
 >>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   /*glow for webkit-ket-frames*/
   @-webkit-keyframes neon1 {
@@ -302,7 +320,10 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   @-webkit-keyframes neon7 {
     from {
       text-shadow: 0 0 10px #fff,
@@ -326,6 +347,9 @@
     }
   }
 
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
 >>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   /*glow for mozilla-keyframes*/
   @-moz-keyframes neon1 {
@@ -467,7 +491,10 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   @-moz-keyframes neon7 {
     from {
       text-shadow: 0 0 10px #fff,
@@ -491,6 +518,9 @@
     }
   }
 
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
 >>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   
   
@@ -633,7 +663,10 @@
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
 
   @keyframes neon7 {
     from {
@@ -657,5 +690,8 @@
                  0 0 75px #000000;
     }
   }
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
 >>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   

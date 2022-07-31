@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -116,6 +117,125 @@ a.hfondo:hover{
 }
 
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    width: 98%;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+    
+}
+
+.contenido-slider{
+    width: 50%;
+    height: 480px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+
+.contenido-slider:nth-child(1){
+    background: linear-gradient(to bottom, rgb(238, 77, 77), rgb(157, 45, 45));
+    color: #fff;
+}
+
+.contenido-slider:nth-child(2){
+    background: linear-gradient(to bottom, rgb(8, 182, 8), rgb(1, 74, 1));
+    color: #fff;
+}
+
+.contenido-slider:nth-child(3){
+    background: linear-gradient(to bottom, rgb(8, 79, 195), rgb(2, 46, 93));
+    color: #fff;
+}
+
+.contenido-slider:nth-child(4){
+    background: linear-gradient(to bottom, rgb(135, 183, 131), rgb(60, 75, 57));
+    color: #fff;
+}
+
+.contenido-slider:nth-child(5){
+    background: linear-gradient(to bottom, rgb(238, 77, 77), rgb(157, 45, 45));
+    color: #fff;
+}
+
+.contenido-slider > img{
+    width: 40%;
+}
+
+.contenido-slider > div{
+    width: 40%;
+}
+
+.contenido-slider h2{
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.contenido-slider a{
+    color: rgb(255, 255, 255);
+    background: #892323;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a.hfondo:hover{
+    background-color: rgb(106, 12, 12);
+    transition: var(--tran-05);
+}
+
+
+@media screen and (max-width:900px){
+    .contenido-slider > img{
+        width: 250px;
+    }
+
+    .contenido-slider > div{
+        width: 40%;
+    }
+
+    .contenido-slider h2{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .contenido-slider{
+       flex-direction: column-reverse;
+    }
+
+    .contenido-slider > div{
+        width: 80%;
+    }
+
+}
+
+
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
 =======
 *{
     margin: 0;

@@ -13,7 +13,12 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
 <<<<<<< HEAD
+<<<<<<< HEAD
     
+=======
+    <link rel="stylesheet" href="../css/res.css">
+
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
 =======
     <link rel="stylesheet" href="../css/res.css">
 
@@ -148,12 +153,15 @@
   </a></p>
 	</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class='recuadro' id="uno">
         <h1 style="text-align:center">Texto info</h1>
         <p>askjdahi da aodajd asd osdajd kalsdjia jdsa </p>
 	</div>
     <hr>
 =======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
 
     <div class='recuadro' id="uno">
     <p class="t7"><a href="">
@@ -243,6 +251,9 @@
     </div>
                 </hr>
             <hr style="height:5px;border:none;color:#333;background-color:#333;">
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
 >>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
 	<div class='recuadro' id="dos">
         <h1 style="text-align:center">COMENTARIOS</h1>
@@ -300,6 +311,10 @@
             <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
             <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
 =======
             <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
 >>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
