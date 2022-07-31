@@ -60,7 +60,11 @@
                     </li>
 
                     <li class="nav-link xbox">
+<<<<<<< HEAD
                         <a href="#">
+=======
+                        <a href="xbox.php">
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
                             <i class='fab fa-xbox icon'></i>
                             <span class="text nav-text">Xbox</span>
                         </a>
