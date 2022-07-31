@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../resources/css/footer.css">
     <link rel="stylesheet" href="../resources/css/index.css">
     
+    <link rel="stylesheet" media="all" href="ej.css" />
+
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -256,68 +258,95 @@
       <script src="../resources/js/carrusel.js"></script>
 <br><br><br><br><br><br>
 <hr/>
-<footer class="footer-distributed">
 
-        <div class="footer-left">
-  
-          <img class="logof" src="../resources/img/logo.png" alt="">
-  
-          <p class="footer-links">
-            <a href="#">Inicio </a>
-            ·
-            <a href="../resources/views/politica.php">Politica de Privacidad</a>
-            
-          </p>
-  
-          <p class="footer-company-name">IDGSGamers © 2022</p>
-  
-          <div class="footer-icons">
-  
-            <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
-            <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
-            <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
-            <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
-  
-          </div>
-  
+        <!--Waves Container-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
         </div>
-  
-        <div class="footer-right">
-  
-          <p>Contactanos</p>
-  
-          <form action="#" method="post">
-  
-                
+        <!--Waves end-->
+        
+        </div>
+        <!--Header ends-->
+        
+        <!--Content starts-->
+        <div class="content flex">
+        <footer class="footer-distributed">
 
-            <input type="email" name="email" placeholder="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-                    if($usuario){
-                    echo '';
-                    }else{
-                    echo 'Correo Electronico';
-                    }
-                ?>"
-                
-                value="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-                    if($usuario){
-                        echo $_SESSION['Correo'];
-                    }else{
-                    echo '';
-                    }
-                ?>"
-                >
-            </input>
-            <textarea name="message" placeholder="Mensaje"></textarea>
-            <button type="submit" name="register">Enviar</button>
-          </form><br><br>
-            <?php 
-            include("../resources/php/ac.php");
-            ?>
-            
-  
+<div class="footer-left">
+
+  <img class="logof" src="../resources/img/logo.png" alt="">
+
+  <p class="footer-links">
+    <a href="#">Inicio </a>
+    ·
+    <a href="../resources/views/politica.php">Politica de Privacidad</a>
+    
+  </p>
+
+  <p class="footer-company-name">IDGSGamers © 2022</p>
+
+  <div class="footer-icons">
+
+    <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
+    <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
+    <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
+    <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
+
+  </div>
+
+</div>
+
+<div class="footer-right">
+
+  <p>Contactanos</p>
+
+  <form action="#" method="post">
+
+        
+
+    <input type="email" name="email" placeholder="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+            if($usuario){
+            echo '';
+            }else{
+            echo 'Correo Electronico';
+            }
+        ?>"
+        
+        value="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+            if($usuario){
+                echo $_SESSION['Correo'];
+            }else{
+            echo '';
+            }
+        ?>"
+        >
+    </input>
+    <textarea name="message" placeholder="Mensaje"></textarea>
+    <button type="submit" name="register">Enviar</button>
+  </form><br><br>
+    <?php 
+    include("../resources/php/ac.php");
+    ?>
+    
+
+</div>
+</footer>
+
         </div>
-  
- </footer>
+        <!--Content ends-->
+
+
     </section>
     
 
