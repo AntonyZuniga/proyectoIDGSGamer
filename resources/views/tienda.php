@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
-    <link rel="stylesheet" href="../css/res.css">
-
+    <link rel="stylesheet" href="../css/tienda.css">
+    
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -24,9 +24,10 @@
     <!----===== SCRIPT ===== -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-
 </head>
+
 <body>
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -40,7 +41,7 @@
                 </div>
             </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
+            <i class='bx bx-chevron-right toggle boton'></i>
         </header>
 
         <div class="menu-bar">
@@ -81,14 +82,14 @@
                     </li>
 
                     <li class="nav-link nintendo">
-                        <a href="#">
+                        <a href="nintendo.php">
                             <i class='fas fa-gamepad icon'></i>
                             <span class="text nav-text">Nintendo</span>
                         </a>
                     </li>
 
                     <li class="nav-link tienda">
-                        <a href="tienda.php">
+                        <a href="#">
                             <i class='fas fa-shopping-cart icon'></i>
                             <span class="text nav-text">Tienda</span>
                         </a>
@@ -134,111 +135,138 @@
 
     </nav>
     <a href="#" class="fas fa-arrow-alt-circle-up icon scroll-top" title="Ir arriba"></a>
-
-    <section class="home">
+    
+<section class="home">
 
     <div class='recuadro' id="cero">
-        <p class="t4"><a href="">
-        NINTENDO
-        </a></p>
-	</div>  
-    <div class='recuadro' id="uno">
-    <p class="t7"><a href="">
-    RESEÑA DE VIDEOJUEGOS
+    <p class="t5"><a href="">
+    TIENDA
   </a></p>
 	</div>
-    <hr style="height:5px;border:none;color:#333;background-color:#333;">
-    <div class='recuadro' id="dos" >
-        <h1 class="tit">Zelda Breath of the Wild</h1><br>
-        <p class="tx">La principal característica de Breath of the Wild es el gigantesco mapa que tiene, cosa especialmente destacable por ser el primer juego de mundo abierto de Nintendo. 
-        Deberás descubrir hasta quince regiones, superar los retos de los ciento veinte santuarios, salvar los cuatro poblados de la furia de sus bestias divinas y liberar el espíritu de los cinco amigos de Link. 
-        Además, tendrás cientos de misiones secundarias para resolver por el camino, personajes por conocer y ayudar, y recovecos que explorar para conseguir completar el juego al cien por cien.
-        The Legend of Zelda: Breath of the Wild es un juego con PEGI +12 debido a que es un juego en el que se lucha con armas contra animales, bestias y otros humanos. Aun así, según mi opinión personal, es un juego bastante decente para todos los públicos.</p><br>
-        <p class="tx">The Legend of Zelda es una mezcla de puzles, acción, estrategia y exploración. Estos elementos se han mantenido a lo largo de la saga, pero con mejoras en cada juego. La mayoría de los juegos de The Legend of Zelda implican la localización y exploración de mazmorras, en los que se resuelven puzzles y derrotan enemigos. Luego de pasar toda la mazmorra, se lucha con el enemigo final de la mazmorra. Cada mazmorra tiene un objeto o arma importante, para llegar hasta el jefe de la mazmorra. Algunos objetos se encuentran en casi toda la saga (como por ejemplo, el Bumerán), mientras que otros son exclusivos de un solo juego (como el Telescarabajo).
-        </p><br>
-        <p class="tx">The Legend of Zelda: Breath of the Wild es un videojuego de acción-aventura de 2017 de la serie The Legend of Zelda, desarrollado por la filial Nintendo EPD en colaboración con Monolith Soft y publicado por Nintendo para las consolas Wii U y Nintendo Switch
-        </p><br><br><br><br>
-	</div>
-    <div class='circulo3' id="tres">
-        <img src="../img/Zelda.jpg" class='imagen'><br><br><br><br><br>
-        <p class="sub">Ganador al premio de mejor juego del 2017</p>
-        </div>
-                </hr>
-                <hr style="height:5px;border:none;color:#333;background-color:#333;">
-    <div class='recuadro' id="tres">
-        <h1 class="tit">Mario Kart 8 Deluxe</h1><br>
-        <p class="tx">Mario Kart 8 Deluxe es un juego de carreras en el que participan muchos de los personajes de la serie de Super Mario, con algunos personajes invitados, como Link de The Legend of Zelda y Villager de Animal Crossing. El título permite al jugador participar en distintas copas a lo largo de múltiples circuitos en el mundo de la mascota de Nintendo utilizando items para avanzar y hacer daño a los demás competidores, además de desafiar las leyes de la gravedad con pistas que nos ponen de cabeza.
-        Del lado visual, Mario Kart 8 Deluxe luce espectacular, llegando a los 1080p cuando se encuentra en el dock del Nintendo Siwtch y corriendo a unos muy estables 60 cuadros por segundo cuando se juega de uno a dos jugadores. </p><br>
-        <p class="tx">Mario Kart 8 Deluxe es un juego asombroso que pule muchos de los aspectos de su versión original de 2014. </p><br>
-        <p class="tx">Mario Kart 8 Deluxe no defrauda en cuanto a lo que representa a su juego y a todo nintendo, sin duda, un juego que debes de tener junto a tu Nintendo Switch </p><br>
-</p><br><br><br><br><br><br>
-	</div>
-    <div class='circulo3' id="dos">
-        <img src="../img/Mario.PNG" class='imagen'>
-    </div>
-                </hr>
-                <hr style="height:5px;border:none;color:#333;background-color:#333;">
-    <div class='recuadro' id="dos">
 
-        <h1 class="tit">Splatoon 2</h1><br>
-        <p class="tx">Es un juego de disparos en tercera persona, 
-        centrado principalmente en el cooperativo multijugador online, 
-        aunque tiene también un modo historia para un jugador, pero que es totalmente secundaria. 
-        La esencia jugable es la de un shooter, con la particularidad de que disparamos pintura, 
-        pudiendo sumergirnos en ella y teniendo que hacerlo para recargar "munición" 
-        y pudiendo usarla para escalar por determinadas superficies, entre otras cosas.
-        Splatoon 2 ofrece varios modos de juego que vamos a ir comentando individualmente. </p><br>
-        <p class="tx">El primero es el modo para un jugador, en el que recorreremos cinco mundos, 
-        presididos por un jefe final y con diferentes fases en cada uno, mientras descubrimos una sencilla historia que sirve como excusa para animarnos a avanzar. 
-        Para los que jugaron al primero tiene algunos guiños que se agradecen bastante y que nos sacan una sonrisa.</p><br>
-         <p class="tx">La principal novedad de este título es la inclusión del modo Salmon Run, una especie de modo horda para hasta cuatro jugadores (aunque podemos jugar también en solitario, si no hubiese nadie online). En este modo tenemos que derrotar a los enemigos que llegan en oleada, recoger su caviar, y en el caso de los enemigos más complicados, recoger los alevines dorados que sueltan para depositarlos en una especie de cesta en un lugar concreto del escenario. Esto, además, abre la puerta a nuevas recompensas especiales para nuestro personaje.
-Como pasa con otros muchos juegos, si Splatoon no te gustó, Splatoon 2 no te va a hacer cambiar de opinión. Si lo disfrutaste, su secuela te va a dar muchas más horas de diversión, a pesar de la escasa evolución que supone más allá del modo Salmon Run y el obligatorio nuevo contenido.
-        </p><br>
-	</div>
-    <div class='circulo3' id="tres">
-        <img src="../img/platano.jpg" class='imagen'><br><br><br><br>
-        <p class="sub">Un juego que promete mucho, pero no cumple.</p>
-    </div>
-                </hr>
-                <hr style="height:5px;border:none;color:#333;background-color:#333;">
-                </div> 
-    <hr>
-	<div class='recuadro' id="dos">
-        <h1 style="text-align:center">COMENTARIOS</h1>
-        <br>
-        <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-                        if($usuario){
-                        echo "
-
-                        <div id='disqus_thread'></div>
-                        <script>
     
-                        (function() {
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://idgsgamers.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                        })();
-                        </script>
+
+
+    <div class='recuadro' id="uno">
+
+    <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo '
+                    
+                    <!-- main section -->
+                    <main id="main" >
+                    
+                    <!-- all categories -->
+                    <section class="categories">
+                        <div class="title-container">
+                            <h1 id="title">CATALOGO</h1>
+                            <button class="fas fa-cart-arrow-down icon boton" type="button" id="cart">  CARRITO</button>
+                        </div>
+                        <div class="card">
+                            <div class="item-container" id="0">
+                                <div class="card-item">
+                                    <img src="../img/fh.png" alt="img" id="card-img">
+                                    <p id="item-name">FORZA Horizon</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 1299</h3>               
+                            </div>
+                    
+                            <div class="item-container" id="1">
+                                <div class="card-item" >
+                                    <img src="../img/sm.png" alt="img" id="card-img">
+                                    <p id="item-name">Spiderman</p>              
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 1499</h3>
+                            </div>
+                    
+                            <div class="item-container" id="2">
+                                <div class="card-item" >
+                                    <img src="../img/lol.png" alt="img" id="card-img">
+                                    <p id="item-name">League of Legends</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 0.1</h3>                
+                            </div>
+                    
+                            <div class="item-container" id="3">
+                                <div class="card-item">
+                                    <img src="../img/mo.png" alt="img" id="card-img">
+                                    <p id="item-name">Super Mario Oddisey                </p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 899</h3>            
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    </main>
+                    <!-- end of main -->
+                    <!-- details page section -->
+                    <div id="details-page">
+                        <div class="details">
+                            <div class="items-detail">
+                                <div class="image-container">
+                                    
+                                    <img src="/images/redmiK20.jpg" alt="" id="details-img">
+                                </div>
+                                <div class="details-card">
+                                    <h2 id="detail-title"></h2>
+                                    <h4 id="detail-price"></h4>
+                                    <p id="spec"><strong><hr><br>Información :</strong>
+                    
+                                        <ul id="detail-info">
+                                            </ul>
+                                    </p>
+                                    <button id="carts">Añadir al carrito</button>
+                                    <button id="buy">Regresar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of page detail -->
+                        <!-- cart list section -->
+                    <div id="cart-container">
                         
+                    <button style="position: absolute;right: 3%; padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon boton" type="button" id="logo">  REGRESAR</button>
+                        <p id="cart-title">Tu <strong>Carrito</strong></p id="cart-title">
+                        <div id="empty-cart">
+                            <h1>Tu carrito esta vacio...</h1>
+                        </div>
+                    
+                        <div id="cart-with-items">
+                            <div class="cart-column">
+                                <h3>Producto</h3>
+                                <h3>Nombre del producto</h3>
+                                <h3>Total </h3>
+                                <h3>Cantidad</h3>
+                                <h3>Eliminar</h3>
+                            </div>
+                            <div id="item-body">
+                            </div>
+                            <div id="total">
+                                <h3 id="total-items"></h3>
+                                <h2 id="total-amount"></h2>
+                                <h3 id="you-saved"></h3>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
                         
-                        ";
-                        }else{
-                            echo '
-                            <h3 style="text-align:center">Debes iniciar sesion para dar tu reseñas</h3>
-                            <br>
-                            <a class="hfondo2" href="login.php">Iniciar Sesion</a>
                         ';
-                        }
-        ?>
-    </div>
-	<div class='recuadro' id="tres">
-    <h1 style="text-align:center">SITIOS OFICIALES</h1>
-
-
-	</div>
+                    }else{
+                    echo 'Debes iniciar sesion para ver el catalogo de VideoJuegos!';
+                    }
+                ?>
         
+
+	<br><br><br><br><br><br><br><br>
+
 <hr/>
+
+
 <footer class="footer-distributed">
 
         <div class="footer-left">
@@ -255,14 +283,12 @@ Como pasa con otros muchos juegos, si Splatoon no te gustó, Splatoon 2 no te va
           <p class="footer-company-name">IDGSGamers © 2022</p>
   
           <div class="footer-icons">
-  
-             
+   
             <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
             <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
             <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
             <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
             <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
-  
   
           </div>
   
@@ -304,7 +330,7 @@ Como pasa con otros muchos juegos, si Splatoon no te gustó, Splatoon 2 no te va
         </div>
   
  </footer>
-    </section>
+ </section>
     
 
     
@@ -339,7 +365,7 @@ modeSwitch.addEventListener("click" , () =>{
     </script>
 
 <script language="JavaScript" type="text/javascript" src="../js/arriba.js"></script>
-
+<script src="../js/tienda.js"></script>
 </body>
 
 </html>
