@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
-    
+    <link rel="stylesheet" href="../css/res.css">
+
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -142,11 +143,95 @@
     XBOX
   </a></p>
 	</div>
+
     <div class='recuadro' id="uno">
-        <h1 style="text-align:center">Texto info</h1>
-        <p>askjdahi da aodajd asd osdajd kalsdjia jdsa </p>
+    <p class="t7"><a href="">
+    RESEÑA DE VIDEOJUEGOS
+  </a></p>
 	</div>
-    <hr>
+    <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <div class='recuadro' id="dos" >
+        <h1 class="tit">Halo Infinite</h1><br>
+        <p class="tx">Halo Infinite la onceava entrega para consolas y la décima cuarta entrega en
+         general de la saga, la cual conmemora 20 años del lanzamiento no solo de su primera entrega, sino también 
+         de la primera Xbox, por lo que 343 Industries tuvo que demostrar todo su potencial para que esta nueva 
+         entrega cumpliera con todas las expectativas de los fans; y bien ahora la pregunta es: ¿De verdad lo logro?
+          Pues acompáñenme a descubrirlo.</p><br>
+        <p class="tx">Comencemos hablando sobre la campaña de Halo Infinite, la cual no mentían a
+         la hora de decir que es la campaña más grande de la franquicia hasta el momento y no solo por el tamaño 
+         del mapa sino también por la trama, la cual continua los sucesos de Halo 5 por lo que he de aclarar que
+          si es recomendable conocer la historia de las entregas anteriores sobre todo la de Halo 4 y 5. Halo 
+          Infinite es el primer juego de la saga en ser de mundo abierto, por lo que pasemos a analizar que tan 
+          bien implementado esta este apartado; para empezar, he de decir que el apartado grafico es estupendo 
+          pues los detalles en cada área de interés en Zeta Halo son increíbles ya sea en una fortaleza de los 
+          «Desterrados» o una de las ya conocidas torres de propaganda.
+        </p><br>
+        <p class="tx">En resumen podemos decir que Halo Infinite es un gran título que sin duda 
+        alguna podrán disfrutar jugadores tanto veteranos así como los nuevos que recién empiezan, además claro 
+        de contar con una campaña muy entretenida y dinámica la cual si bien comete un par de errores no deja de 
+        ser interesante y sobre todo relevante para la saga, también quiero destacar su excelente trabajo.
+        </p><br><br>
+	</div>
+    <div class='circulo' id="tres">
+        <img src="../img/halo.jpg" class='imagen'><br><br><br>
+        <p class="sub">Master Chief - Personaje Principal</p>
+    </div>
+                </hr>
+                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <div class='recuadro' id="tres">
+
+        <h1 class="tit">Gears Of War 5</h1><br>
+        <p class="tx">Esta quinta entrega es el Gears of War más completo, más espectacular y más
+         variado, y en ciertos aspectos también el más arriesgado desde la primera entrega, un festín de acción 
+         épica y desenfrenada que va a enamorar a los fans de la serie, pero que tiene infinidad de argumentos 
+         para satisfacer a cualquiera que disfrute pegando tiros en un buen videojuego.</p><br>
+         <p class="tx">Con una jugabilidad sutilmente mejorada, que hace que sea simplemente 
+         perfecta, y un espectáculo gráfico y sonoro de primera, podemos disfrutar de infinidad de contenidos, 
+         todos de enorme calidad: una Campaña divertidísima y enorme, que puede durar más de 20 horas; un modo 
+         Horda tan adictivo como siempre, pero con novedades importantes; un Multijugador más completo y con más 
+         posibilidades que nunca, que ofrece infinidad de horas; y por último el original y desafiante modo 
+         cooperativo Escape, en el que la comunidad puede crear sus propios mapas.</p><br>
+        <p class="tx">Kait, la nueva protagonista, es un personaje complejo y con un interesante 
+        trasfondo, tiene carisma, siendo su pasado uno de los pilares sobre los que se construye la historia de 
+        Gears 5. Eso sí, está muy bien rodeada del resto de personajes habituales, a los que después de tantas 
+        entregas ya les hemos cogido cariño, y que además en esta entrega cuentan con algunos diálogos muy 
+        divertidos, en una aventura que como es habitual pasa del drama al humor con sorprendente naturalidad.
+        </p>
+        </p><br><br><br><br><br><br>
+	</div>
+    <div class='circulo' id="dos">
+        <img src="../img/gears.jpg" class='imagen'>
+    </div><br><br><br>
+                </hr>
+                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <div class='recuadro' id="dos">
+
+        <h1 class="tit">Forza Horizon 5</h1><br>
+        <p class="tx">Es el último lanzamiento de la saga para Xbox One, Xbox Series X|S y PC, 
+        trasladando toda la emoción del festival Horizon a México, en una experiencia que resulta un auténtico 
+        agasajo de principio a fin. Y es que quizá sea ese vínculo tan personal que tengo con los juegos de 
+        carrera, o el hecho de que el escenario en esta ocasión es mi país, pero al jugar Forza Horizon 5 me 
+        quedo con la sensación de que estamos ante uno de los mejores juegos de carreras de la historia, y sin 
+        duda, ante una de las mejores entregas de la industria de los videojuegos de todo el 2021</p><br>
+         <p class="tx">En Forza Horizon 5 estamos ante el mapa más extenso de la saga. Playground
+          desarrolló de forma excepcional un amplio territorio totalmente inspirado en la geografía mexicana, 
+          presentando una enorme variedad de entornos extremadamente exóticos e interesantes en los que uno pueda
+           pasar las horas sin presentar el más ligero atisbo de aburrimiento.</p><br>
+        <p class="tx">El tapiz de escenarios y fondos coloridos es probablemente el más hermoso 
+        en la historia de los juegos de carrera. Quizá me está ganando un poco el amor que puedo profesar como 
+        mexicano hacia mi país, sin embargo, no exagero al decir que estamos ante una entrega visualmente hermosa,
+         con escenarios majestuosos que nos llenan la pupila con tonos y texturas que le dan una enorme belleza. 
+         Un juego de carreras arcade que siempre se siente relajado, que no te abruma al encerrarte en algo que no
+          quieres hacer y que te recompensa constantemente por lo que eliges jugar. Se ve hermoso, suena magnífico 
+          y se siente como una experiencia placentera, recreativa y entretenida de principio a fin.
+        </p><br><br><br>
+	</div>
+    <div class='circulo' id="tres">
+        <img src="../img/forza.jpg" class='imagen'><br><br><br>
+        <p class="sub">Forza Horizon 5 esta basado en México</p>
+    </div>
+                </hr>
+            <hr style="height:5px;border:none;color:#333;background-color:#333;">
 	<div class='recuadro' id="dos">
         <h1 style="text-align:center">COMENTARIOS</h1>
         <br>
@@ -202,6 +287,7 @@
    
             <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
             <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
+            <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
             <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
             <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
   

@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="../resources/css/carrusel.css">
     <link rel="stylesheet" href="../resources/css/footer.css">
     <link rel="stylesheet" href="../resources/css/index.css">
+    <link rel="stylesheet" href="../resources/css/titulos.css">
+    <link rel="stylesheet" href="../resources/css/res.css">
     
-    <link rel="stylesheet" media="all" href="ej.css" />
-
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -200,7 +200,11 @@
         </div>    
         </div>
         
-
+        <div class='recuadro' id="uno">
+         <p class="t6"><a href="">
+            NOVEDADES
+        </a></p>
+	    </div>
         <div class="contenedor">
           <div class="slider-contenedor" >
               <section class="contenido-slider ">
@@ -256,97 +260,114 @@
             </div>
       </div>
       <script src="../resources/js/carrusel.js"></script>
-<br><br><br><br><br><br>
-<hr/>
+<br><br>
 
-        <!--Waves Container-->
-        <div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-        </g>
-        </svg>
+
+</hr>
+<hr style="height:5px;border:none;color:#333;background-color:#333;">
+<div class='recuadro' id="cuatro"><br><br><br><br>
+        <h1 class='tituloin'>Si buscas una PS5, hay un nuevo pack a la venta</h1><br>
+        <p class="tx">Desde hace unos minutos se anunció un paquete que incluye una PS5, 2 mandos, los juegos 
+        Horizon: Forbidden West y Gran Turismo 7 por 779,90 euros, que son 16,380 pesos mexicanos.</p>
+	</div>
+    <div id="cinco">
+        <img src="../resources/img/sorp.gif" class='imagen2'>
+    </div>
+                </hr>
+                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <div class='recuadro' id="cuatro"><br><br><br><br>
+        <h1 class='tituloin'>Xbox vendió el doble que PlayStation</h1><br>
+        <p class="tx">Xbox vendió 6695 unidades mientras que PlayStation 5 únicamente vendieron 3000 unidades
+         teniendo en cuenta la alta escasez existencias.</p><br><br>
+	</div>
+    <div id="cinco">
+        <img src="../resources/img/dinero.gif" class='imagen2'>
+    </div>
+                </hr>
+                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <div class='recuadro' id="cuatro"><br><br><br><br>
+        <h1 class='tituloin'>Nintendo prepara un nuevo modelo de su consola Switch</h1><br>
+        <p class="tx">Las ventas de la Switch superaron los 32 millones de unidades en todo el mundo por lo que
+         Nintendo está preparando relanzarla con una nueva versión. </p><br><br>
+	</div>
+    <div id="cinco">
+        <img src="../resources/img/nin.gif" class='imagen2'>
+    </div>
+                </hr>
+                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <div class='recuadro' id="cuatro"><br><br>
+        <h1 class='tituloin'>Rebajas de verano de Steam</h1><br>
+        <p class="tx">Las Rebajas de Verano de Steam han comenzado ya. Muchas de estas ofertas han llevado a
+         ciertos jugadores a obtener videojuegos con un descuento espectacular con tantas posibilidades de excelentes títulos
+          que puedes comprar.</p><br><br>
+	</div>
+    <div id="cinco">
+        <img src="../resources/img/like.gif" class='imagen2'>
+    </div>
+<hr/>             
+<footer class="footer-distributed">
+
+        <div class="footer-left">
+  
+          <img class="logof" src="../resources/img/logo.png" alt="">
+  
+          <p class="footer-links">
+            <a href="#">Inicio</a>
+            ·
+            <a href="../resources/views/politica.php">Politica de Privacidad</a>
+            
+          </p>
+  
+          <p class="footer-company-name">IDGSGamers © 2022</p>
+  
+          <div class="footer-icons">
+  
+            <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
+            <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
+            <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
+            <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
+            <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
+  
+          </div>
+  
         </div>
-        <!--Waves end-->
-        
+  
+        <div class="footer-right">
+  
+          <p>Contactanos</p>
+  
+          <form action="#" method="post">
+  
+                
+
+            <input type="email" name="email" placeholder="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo '';
+                    }else{
+                    echo 'Correo Electronico';
+                    }
+                ?>"
+                
+                value="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                        echo $_SESSION['Correo'];
+                    }else{
+                    echo '';
+                    }
+                ?>"
+                >
+            </input>
+            <textarea name="message" placeholder="Mensaje"></textarea>
+            <button type="submit" name="register">Enviar</button>
+          </form><br><br>
+            <?php 
+            include("../resources/php/ac.php");
+            ?>
+            
+  
         </div>
-        <!--Header ends-->
-        
-        <!--Content starts-->
-        <div class="content flex">
-        <footer class="footer-distributed">
-
-<div class="footer-left">
-
-  <img class="logof" src="../resources/img/logo.png" alt="">
-
-  <p class="footer-links">
-    <a href="#">Inicio </a>
-    ·
-    <a href="../resources/views/politica.php">Politica de Privacidad</a>
-    
-  </p>
-
-  <p class="footer-company-name">IDGSGamers © 2022</p>
-
-  <div class="footer-icons">
-
-    <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
-    <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
-    <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
-    <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
-
-  </div>
-
-</div>
-
-<div class="footer-right">
-
-  <p>Contactanos</p>
-
-  <form action="#" method="post">
-
-        
-
-    <input type="email" name="email" placeholder="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-            if($usuario){
-            echo '';
-            }else{
-            echo 'Correo Electronico';
-            }
-        ?>"
-        
-        value="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-            if($usuario){
-                echo $_SESSION['Correo'];
-            }else{
-            echo '';
-            }
-        ?>"
-        >
-    </input>
-    <textarea name="message" placeholder="Mensaje"></textarea>
-    <button type="submit" name="register">Enviar</button>
-  </form><br><br>
-    <?php 
-    include("../resources/php/ac.php");
-    ?>
-    
-
-</div>
-</footer>
-
-        </div>
-        <!--Content ends-->
-
-
+  
+ </footer>
     </section>
     
 
