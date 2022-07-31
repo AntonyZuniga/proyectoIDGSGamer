@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
-    <link rel="stylesheet" href="../css/res.css">
+    <link rel="stylesheet" href="../css/res.css"> 
     
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
