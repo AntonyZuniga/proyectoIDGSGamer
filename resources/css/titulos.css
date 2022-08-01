@@ -42,12 +42,24 @@
     margin:0px 0 0px 0;
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   .t7{
     text-align:center;
     font-size:5em;
     margin:0px 0 0px 0;
   }
 
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
   a{
     text-decoration:none;
     -webkit-transition: all 0.5s;
@@ -114,6 +126,14 @@
     -moz-animation: neon6 1.5s ease-in-out infinite alternate;
     animation: neon6 1.5s ease-in-out infinite alternate;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
 
   .t7:nth-child(1) a{
     color:#000000;
@@ -124,6 +144,13 @@
     -moz-animation: neon7 1.5s ease-in-out infinite alternate;
     animation: neon7 1.5s ease-in-out infinite alternate;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   
   .t a:hover{
   color:#ffffff;
@@ -149,10 +176,25 @@
     color:#ffffff;
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   .t7 a:hover{
     color:#ffffff;
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   /*glow for webkit-ket-frames*/
   @-webkit-keyframes neon1 {
     from {
@@ -292,6 +334,14 @@
     }
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   @-webkit-keyframes neon7 {
     from {
       text-shadow: 0 0 10px #fff,
@@ -315,6 +365,13 @@
     }
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   /*glow for mozilla-keyframes*/
   @-moz-keyframes neon1 {
     from {
@@ -454,6 +511,14 @@
     }
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   @-moz-keyframes neon7 {
     from {
       text-shadow: 0 0 10px #fff,
@@ -477,6 +542,13 @@
     }
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   
   
   /*glow*/
@@ -617,6 +689,14 @@
                  0 0 75px #000000;
     }
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
 
   @keyframes neon7 {
     from {
@@ -640,4 +720,11 @@
                  0 0 75px #000000;
     }
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
   

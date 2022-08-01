@@ -12,7 +12,18 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="../css/res.css">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="../css/res.css">
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+    <link rel="stylesheet" href="../css/res.css">
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
     
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -143,10 +154,25 @@
     </a></p>
 	</div>     
     <div class='recuadro' id="uno">
+<<<<<<< HEAD
     <p class="t7"><a href="">
     RESEÑA DE VIDEOJUEGOS
   </a></p>
 	</div>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <h1 style="text-align:center">Texto info</h1>
+	</div>
+    <hr>
+=======
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+    <p class="t7"><a href="">
+    RESEÑA DE VIDEOJUEGOS
+  </a></p>
+	</div>
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
     <hr style="height:5px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="dos" >
         <h1 class="tit">League of Legends</h1><br>
@@ -201,6 +227,13 @@ CS:GO está centrado sobre todo en el modo competitivo. Tras su salida, se acept
         </div>
                 </hr>
             <hr style="height:5px;border:none;color:#333;background-color:#333;">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
 	<div class='recuadro' id="dos">
         <h1 style="text-align:center">COMENTARIOS</h1>
         <br>
@@ -257,7 +290,18 @@ CS:GO está centrado sobre todo en el modo competitivo. Tras su salida, se acept
              
             <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
             <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
+<<<<<<< HEAD
             <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+=======
+            <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
+>>>>>>> 624cd5889f7f40752f5e71efbdeaae620db30b09
+>>>>>>> 98b4fc190f8ee24912087a72adbeddb3ca749277
             <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
             <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
   
