@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../css/titulos.css">
     <link rel="stylesheet" href="../css/res.css">
 
+    <link rel="stylesheet" media="all" href="../../public/ej.css" />
+
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -134,7 +136,14 @@
 
     </nav>
     <a href="#" class="fas fa-arrow-alt-circle-up icon scroll-top" title="Ir arriba"></a>
-
+<!-- Background animtion-->
+<div class="background">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
     <section class="home">
 
     <div class='recuadro' id="cero">
@@ -147,7 +156,7 @@
     RESEÑA DE VIDEOJUEGOS
   </a></p>
 	</div>
-    <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <hr style="height:2px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="dos" >
         <h1 class="tit">Zelda Breath of the Wild</h1><br>
         <p class="tx">La principal característica de Breath of the Wild es el gigantesco mapa que tiene, cosa especialmente destacable por ser el primer juego de mundo abierto de Nintendo. 
@@ -164,7 +173,7 @@
         <p class="sub">Ganador al premio de mejor juego del 2017</p>
         </div>
                 </hr>
-                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+                <hr style="height:2px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="tres">
         <h1 class="tit">Mario Kart 8 Deluxe</h1><br>
         <p class="tx">Mario Kart 8 Deluxe es un juego de carreras en el que participan muchos de los personajes de la serie de Super Mario, con algunos personajes invitados, como Link de The Legend of Zelda y Villager de Animal Crossing. El título permite al jugador participar en distintas copas a lo largo de múltiples circuitos en el mundo de la mascota de Nintendo utilizando items para avanzar y hacer daño a los demás competidores, además de desafiar las leyes de la gravedad con pistas que nos ponen de cabeza.
@@ -177,7 +186,7 @@
         <img src="../img/Mario.PNG" class='imagen'>
     </div>
                 </hr>
-                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+                <hr style="height:2px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="dos">
 
         <h1 class="tit">Splatoon 2</h1><br>
@@ -200,7 +209,7 @@ Como pasa con otros muchos juegos, si Splatoon no te gustó, Splatoon 2 no te va
         <p class="sub">Un juego que promete mucho, pero no cumple.</p>
     </div>
                 </hr>
-                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+                <hr style="height:2px;border:none;color:#333;background-color:#333;">
                 </div> 
     <hr>
 	<div class='recuadro' id="dos">
@@ -238,7 +247,30 @@ Como pasa con otros muchos juegos, si Splatoon no te gustó, Splatoon 2 no te va
 
 	</div>
         
-<hr/>
+    <hr>
+    <!--Waves Container-->
+<div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+        
+        </div>
+        <!--Header ends-->
+        
+        <!--Content starts-->
+        <div class="content flex">
+
 <footer class="footer-distributed">
 
         <div class="footer-left">

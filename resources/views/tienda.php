@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
     <link rel="stylesheet" href="../css/tienda.css">
+
+    <link rel="stylesheet" media="all" href="../../public/ej.css" />
     
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -260,14 +262,16 @@
                     echo 'Debes iniciar sesion para ver el catalogo de VideoJuegos!';
                     }
                 ?>
-        
+      </div>  
+                
 
 	<br><br><br><br><br><br><br><br>
-
-<hr/>
+    <hr>
+    
 
 
 <footer class="footer-distributed">
+    
 
         <div class="footer-left">
   

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
     <link rel="stylesheet" href="../css/res.css">
+
+    <link rel="stylesheet" media="all" href="../../public/ej.css" />
     
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -134,7 +136,14 @@
 
     </nav>
     <a href="#" class="fas fa-arrow-alt-circle-up icon scroll-top" title="Ir arriba"></a>
-    
+    <!-- Background animtion-->
+<div class="background">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
     <section class="home">
 
     <div class='recuadro' id="cero">
@@ -147,7 +156,7 @@
     RESEÑA DE VIDEOJUEGOS
   </a></p>
 	</div>
-    <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <hr style="height:2px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="dos" >
         <h1 class="tit">League of Legends</h1><br>
         <p class="tx">League of Legends es un juego de estrategia por equipos en el que dos equipos de cinco campeones se enfrentan para ver quién destruye antes la base del otro. Elige de entre un elenco de 140 campeones para realizar jugadas épicas, asesinar rivales y derribar torretas para alzarte con la victoria.
@@ -161,7 +170,7 @@ En el juego, dos equipos de cinco jugadores luchan en un combate jugador contra 
         <p class="sub">Un gran juego que te engancha facilmente</p>
     </div>
                 </hr>
-                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+                <hr style="height:2px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="tres">
 
         <h1 class="tit">Valorant</h1><br>
@@ -177,7 +186,7 @@ Los jugadores asumen el control de agentes, personajes que provienen de una gran
         <img src="../img/Valorant.png" class='imagen'>
     </div>
                 </hr>
-                <hr style="height:5px;border:none;color:#333;background-color:#333;">
+                <hr style="height:2px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="dos">
 
     
@@ -200,7 +209,7 @@ CS:GO está centrado sobre todo en el modo competitivo. Tras su salida, se acept
         <p class="sub">Se hacen torneos anuales con gran repercusión en el mundo</p>
         </div>
                 </hr>
-            <hr style="height:5px;border:none;color:#333;background-color:#333;">
+            <hr style="height:2px;border:none;color:#333;background-color:#333;">
 	<div class='recuadro' id="dos">
         <h1 style="text-align:center">COMENTARIOS</h1>
         <br>
@@ -236,7 +245,31 @@ CS:GO está centrado sobre todo en el modo competitivo. Tras su salida, se acept
 
 	</div>
 
-<hr/>
+    <hr>
+    <!--Waves Container-->
+<div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+        
+        </div>
+        <!--Header ends-->
+        
+        <!--Content starts-->
+        <div class="content flex">
+
+
 <footer class="footer-distributed">
 
         <div class="footer-left">
