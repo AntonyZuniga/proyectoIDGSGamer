@@ -140,7 +140,7 @@
 
     <div class='recuadro' id="cero">
     <p class="t5"><a href="">
-    TIENDA
+    TIENDA 
   </a></p>
 	</div>
 
