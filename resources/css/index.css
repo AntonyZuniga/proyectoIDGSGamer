@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+html {
+  height: 100%;
+}
+
+.filterwrapper {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+.svgtext {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.intro {
+  margin-bottom: 3em;
+}
+
+.glitch-filter-example {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  min-width: 490px;
+}
+
+.glitch-filter-example__heading {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+.glitch-filter-example__filtered-text {
+  filter: url(#filter);
+  fill: white;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+.top-r, .bot-r, .top-g, .bot-g {
+  stroke: #ffffff;
+}
+.top-r {
+  stroke-width: 100px;
+  animation: topani 3.5s linear infinite;
+}
+.bot-r {
+  stroke-width: 100px;
+  animation: botani 4s linear infinite;
+}
+.top-g {
+  stroke-width: 50px;
+  animation: topani 4s linear reverse infinite;
+}
+.bot-g {
+  stroke-width: 50%;
+  animation: botani 3.5s linear reverse infinite;
+}
+@keyframes topani {
+  4% {
+    stroke-width: 121px;
+  }
+  6% {
+    stroke-width: 161px;
+  }
+  10% {
+    stroke-width: 54px;
+  }
+  16% {
+    stroke-width: 166px;
+  }
+  24% {
+    stroke-width: 99px;
+  }
+  26% {
+    stroke-width: 110px;
+  }
+  33% {
+    stroke-width: 39px;
+  }
+  38% {
+    stroke-width: 135px;
+  }
+  40% {
+    stroke-width: 151px;
+  }
+  47% {
+    stroke-width: 52px;
+  }
+  52% {
+    stroke-width: 118px;
+  }
+  57% {
+    stroke-width: 84px;
+  }
+  63% {
+    stroke-width: 184px;
+  }
+  69% {
+    stroke-width: 18px;
+  }
+  71% {
+    stroke-width: 180px;
+  }
+  76% {
+    stroke-width: 198px;
+  }
+  83% {
+    stroke-width: 56px;
+  }
+  88% {
+    stroke-width: 151px;
+  }
+  94% {
+    stroke-width: 158px;
+  }
+  99% {
+    stroke-width: 83px;
+  }
+}
+@keyframes botani {
+  1% {
+    stroke-width: 106px;
+  }
+  8% {
+    stroke-width: 9px;
+  }
+  12% {
+    stroke-width: 68px;
+  }
+  19% {
+    stroke-width: 168px;
+  }
+  26% {
+    stroke-width: 89px;
+  }
+  32% {
+    stroke-width: 106px;
+  }
+  36% {
+    stroke-width: 151px;
+  }
+  47% {
+    stroke-width: 119px;
+  }
+  50% {
+    stroke-width: 112px;
+  }
+  58% {
+    stroke-width: 140px;
+  }
+  60% {
+    stroke-width: 44px;
+  }
+  67% {
+    stroke-width: 129px;
+  }
+  73% {
+    stroke-width: 124px;
+  }
+  80% {
+    stroke-width: 54px;
+  }
+  86% {
+    stroke-width: 192px;
+  }
+  92% {
+    stroke-width: 161px;
+  }
+  96% {
+    stroke-width: 176px;
+  }
+  102% {
+    stroke-width: 155px;
+  }
+}
+
+.titulo{
+    border: 1.5px solid;
+    border-radius:15px;
+    border-color: #000000;
+
+    margin: 50px 650px 50px 650px;
+
+    border-color: rgba(1, 1, 1, 0.714);
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    background:rgb(0, 0, 0);
+    font-size: 1.1em;
+    box-shadow:0 0 5px 5px rgba(252, 252, 252, 0.708),0 17px 50px 0 rgba(172, 172, 172, 0.756);
+}
+
+.titulo2{
+  border-color: rgba(0, 0, 0, 0.372);
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  background:rgba(0, 0, 0, 0.561);
+  font-size: 1.1em;
+  box-shadow:0 0 5px 5px rgba(15, 15, 15, 0.708),0px 17px 50px 0px rgba(51, 51, 51, 0.756);
+}

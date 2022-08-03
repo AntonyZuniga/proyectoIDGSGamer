@@ -11,8 +11,11 @@
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/titulos.css">
+    <link rel="stylesheet" href="../css/tienda.css">
 
+    <link rel="stylesheet" media="all" href="../../public/ej.css" />
+    
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -23,10 +26,10 @@
     <!----===== SCRIPT ===== -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-
 </head>
+
 <body>
-    
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -88,7 +91,7 @@
                     </li>
 
                     <li class="nav-link tienda">
-                        <a href="tienda.php">
+                        <a href="#">
                             <i class='fas fa-shopping-cart icon'></i>
                             <span class="text nav-text">Tienda</span>
                         </a>
@@ -99,8 +102,8 @@
             </div>
 
             <div class="bottom-content">
-                
-            <li><a href="info.php">
+
+                <li><a href="../views/info.php">
                 <i class='fas fa-user-circle icon'></i>
                 <span class="text nav-text">
 
@@ -115,7 +118,7 @@
 
                 
                 </span>
-            </a></li>
+                </a></li>
 
                 <li class="mode">
                     <div class="sun-moon">
@@ -134,90 +137,141 @@
 
     </nav>
     <a href="#" class="fas fa-arrow-alt-circle-up icon scroll-top" title="Ir arriba"></a>
+    
+<section class="home">
 
-    <section class="home">
+    <div class='recuadro' id="cero">
+    <p class="t5"><a href="">
+    TIENDA
+  </a></p>
+	</div>
 
-<br class="hide">
-<br class="hide">
-<br class="hide">
+    
 
-    <div class="login-wrap">
-        <div class="login-html">
-            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar Sesion</label>
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
-            <div class="login-form">
 
-                <form action="login.php" method="POST">
-                <div class="sign-in-htm">
+    <div class='recuadro' id="uno">
 
-                    <?php if(count($errors) > 0): ?>
-                    <div class="alert alert-danger">
-                        <?php foreach($errors as $error):?>
-                        <li><?php echo $error;?></li>
-                        <?php endforeach;?>
-                    </div>
-                    <?php endif;?>
-
-                    <div class="group">
-                        <label for="user" class="label">Usuario / Correo Electronico</label>
-                        <input id="user" name="user" type="text" class="input"  maxlength="100" >
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Contraseña</label>
-                        <input id="pass" name="pass" type="password" class="input" data-type="password" maxlength="25" >
-                    </div>
-                    <div class="group">
-                        <input type="submit" name="login" class="button" value="Iniciar Sesion">
-                    </div>
-                    <div class="hr"></div>
-                    <div class="foot-lnk">
-                    </div>
-                </div>
-                </form>
-
-                <form action="login.php" method="POST">
-                <div class="sign-up-htm">
-
-                    <?php if(count($errors) > 0): ?>
-                    <div class="alert alert-danger">
-                        <?php foreach($errors as $error):?>
-                        <li><?php echo $error;?></li>
-                        <?php endforeach;?>
-                    </div>
-                    <?php endif;?>
+    <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo '
                     
-                    <div class="group">
-                        <label for="usuario" class="label">Usuario</label>
-                        <input id="user" value="<?php echo $username; ?>" name="user" type="text" class="input" pattern="[a-zA-Z0-9]+" minlength="5" maxlength="25" >
+                    <!-- main section -->
+                    <main id="main" >
+                    
+                    <!-- all categories -->
+                    <section class="categories">
+                        <div class="title-container">
+                            <h1 id="title">CATALOGO</h1>
+                            <button class="fas fa-cart-arrow-down icon boton" type="button" id="cart">  CARRITO</button>
+                        </div>
+                        <div class="card">
+                            <div class="item-container" id="0">
+                                <div class="card-item">
+                                    <img src="../img/fh.png" alt="img" id="card-img">
+                                    <p id="item-name">FORZA Horizon</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 1299</h3>               
+                            </div>
+                    
+                            <div class="item-container" id="1">
+                                <div class="card-item" >
+                                    <img src="../img/sm.png" alt="img" id="card-img">
+                                    <p id="item-name">Spiderman</p>              
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 1499</h3>
+                            </div>
+                    
+                            <div class="item-container" id="2">
+                                <div class="card-item" >
+                                    <img src="../img/lol.png" alt="img" id="card-img">
+                                    <p id="item-name">League of Legends</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 0.1</h3>                
+                            </div>
+                    
+                            <div class="item-container" id="3">
+                                <div class="card-item">
+                                    <img src="../img/mo.png" alt="img" id="card-img">
+                                    <p id="item-name">Super Mario Oddisey                </p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 899</h3>            
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    </main>
+                    <!-- end of main -->
+                    <!-- details page section -->
+                    <div id="details-page">
+                        <div class="details">
+                            <div class="items-detail">
+                                <div class="image-container">
+                                    
+                                    <img src="/images/redmiK20.jpg" alt="" id="details-img">
+                                </div>
+                                <div class="details-card">
+                                    <h2 id="detail-title"></h2>
+                                    <h4 id="detail-price"></h4>
+                                    <p id="spec"><strong><hr><br>Información :</strong>
+                    
+                                        <ul id="detail-info">
+                                            </ul>
+                                    </p>
+                                    <button id="carts">Añadir al carrito</button>
+                                    <button id="buy">Regresar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="group">
-                        <label for="email" class="label">Correo Electronico</label>
-                        <input placeholder="example@email.com" id="email" value="<?php echo $email; ?>" name="email" type="text" class="input" maxlength="100">
+                    <!-- end of page detail -->
+                        <!-- cart list section -->
+                    <div id="cart-container">
+                        
+                    <button style="position: absolute;right: 3%; padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon boton" type="button" id="logo">  REGRESAR</button>
+                        <p id="cart-title">Tu <strong>Carrito</strong></p id="cart-title">
+                        <div id="empty-cart">
+                            <h1>Tu carrito esta vacio...</h1>
+                        </div>
+                    
+                        <div id="cart-with-items">
+                            <div class="cart-column">
+                                <h3>Producto</h3>
+                                <h3>Nombre del producto</h3>
+                                <h3>Total </h3>
+                                <h3>Cantidad</h3>
+                                <h3>Eliminar</h3>
+                            </div>
+                            <div id="item-body">
+                            </div>
+                            <div id="total">
+                                <h3 id="total-items"></h3>
+                                <h2 id="total-amount"></h2>
+                                <h3 id="you-saved"></h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="group">
-                        <label for="pass1" class="label">Contraseña</label>
-                        <input placeholder="(8 caracteres minimo)" id="pass1" name="pass" type="password" class="input" data-type="password" minlength="8" maxlength="25">
-                    </div>
-                    <div class="group">
-                        <label for="pass2" class="label">Confirmar Contraseña</label>
-                        <input placeholder="(8 caracteres minimo)" id="pass2" name="passConf" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <input type="submit" name="register" class="button hfondo" value="Registrarse">
-                    </div>
-                    <div class="hr"></div>
-                    <div class="foot-lnk">
-                    </div>
-                </div>
+                        </div>
+                        
+                        ';
+                    }else{
+                    echo 'Debes iniciar sesion para ver el catalogo de VideoJuegos!';
+                    }
+                ?>
+      </div>  
+                
 
-                </form>
-            </div>
-        </div>
-    </div>    
+	<br><br><br><br><br><br><br><br>
+    <hr>
+    
 
-<br><br><br><br>
-<hr/>
+
 <footer class="footer-distributed">
+    
 
         <div class="footer-left">
   
@@ -233,14 +287,12 @@
           <p class="footer-company-name">IDGSGamers © 2022</p>
   
           <div class="footer-icons">
-  
-             
-          <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
+   
+            <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
             <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
             <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
             <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
             <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
-  
   
           </div>
   
@@ -282,7 +334,7 @@
         </div>
   
  </footer>
-    </section>
+ </section>
     
 
     
@@ -317,6 +369,17 @@ modeSwitch.addEventListener("click" , () =>{
     </script>
 
 <script language="JavaScript" type="text/javascript" src="../js/arriba.js"></script>
+<script src="../js/tienda.js"></script>
+
+<!-- Código de instalación Cliengo para antoniozigaluna@gmail.com --> 
+<script type="text/javascript">(function () { 
+    var ldk = document.createElement('script'); 
+    ldk.type = 'text/javascript';
+    ldk.async = true;
+    ldk.src = '../js/chatbot.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ldk, s); })();
+</script>
 
 </body>
 
