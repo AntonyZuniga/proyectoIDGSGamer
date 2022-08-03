@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
     <link rel="stylesheet" href="../css/tienda.css">
+
+    <link rel="stylesheet" media="all" href="../../public/ej.css" />
     
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -260,14 +262,16 @@
                     echo 'Debes iniciar sesion para ver el catalogo de VideoJuegos!';
                     }
                 ?>
-        
+      </div>  
+                
 
 	<br><br><br><br><br><br><br><br>
-
-<hr/>
+    <hr>
+    
 
 
 <footer class="footer-distributed">
+    
 
         <div class="footer-left">
   
@@ -286,6 +290,7 @@
    
             <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
             <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
+            <a class="tooltip" href="https://www.tiktok.com/@idgs_gamer?lang=es"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Tik-Tok</span><i class='fab fa-tiktok'></i></i></a>
             <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
             <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
   
@@ -365,6 +370,17 @@ modeSwitch.addEventListener("click" , () =>{
 
 <script language="JavaScript" type="text/javascript" src="../js/arriba.js"></script>
 <script src="../js/tienda.js"></script>
+
+<!-- Código de instalación Cliengo para antoniozigaluna@gmail.com --> 
+<script type="text/javascript">(function () { 
+    var ldk = document.createElement('script'); 
+    ldk.type = 'text/javascript';
+    ldk.async = true;
+    ldk.src = '../js/chatbot.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ldk, s); })();
+</script>
+
 </body>
 
 </html>
