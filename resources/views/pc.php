@@ -371,6 +371,16 @@ modeSwitch.addEventListener("click" , () =>{
 
 <script language="JavaScript" type="text/javascript" src="../js/arriba.js"></script>
 
+<!-- Código de instalación Cliengo para antoniozigaluna@gmail.com --> 
+<script type="text/javascript">(function () { 
+    var ldk = document.createElement('script'); 
+    ldk.type = 'text/javascript';
+    ldk.async = true;
+    ldk.src = '../js/chatbot.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ldk, s); })();
+</script>
+
 </body>
 
 </html>
