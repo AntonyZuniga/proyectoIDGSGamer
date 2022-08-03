@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
     <link rel="stylesheet" href="../css/res.css">
-
-    <link rel="stylesheet" media="all" href="../../public/ej.css" />
     
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -136,14 +134,7 @@
 
     </nav>
     <a href="#" class="fas fa-arrow-alt-circle-up icon scroll-top" title="Ir arriba"></a>
-    <!-- Background animtion-->
-<div class="background">
-       <div class="cube"></div>
-       <div class="cube"></div>
-       <div class="cube"></div>
-       <div class="cube"></div>
-      <div class="cube"></div>
-    </div>
+    
     <section class="home">
 
     <div class='recuadro' id="cero">
@@ -158,7 +149,7 @@
   </a></p><br>
 	</div>
     
-    <hr style="height:2px;border:none;color:#333;background-color:#333;">
+    <hr style="height:5px;border:none;color:#333;background-color:#333;">
 <div class='recuadro' id="dos">
         <h1 class="tit">Horizon zero down: Forbidden West</h1><br>
         <p class="tx">El mundo de Horizon Zero Dawn era increíblemente hermoso y con el 
@@ -184,7 +175,42 @@
         <img src="../img/hori.jpg" class='imagen'>
     </div>
     
-                <hr style="height:2px;border:none;color:#333;background-color:#333;">
+    <hr style="height:2px; border:none; color:#333; background-color:#333;">
+	<div class='recuadro' id="dos">
+        <h1 style="text-align:center">COMENTARIOS</h1>
+        <br>
+        <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                        if($usuario){
+                        echo "
+
+                        <div id='disqus_thread'></div>
+                        <script>
+    
+                        (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://idgsgamers.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                        
+                        
+                        ";
+                        }else{
+                            echo '
+                            <h3 style="text-align:center">Debes iniciar sesion para dar tu reseñas</h3>
+                            <br>
+                            <a class="hfondo2" href="login.php">Iniciar Sesion</a>
+                        ';
+                        }
+        ?>
+    </div>
+	<div class='recuadro' id="tres">
+    <h1 style="text-align:center">SITIOS OFICIALES</h1>
+	</div>    
+
+                </hr>
+                <hr style="height:5px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="tres">
         <h1 class="tit">Spider-Man: Miles Morales</h1><br>
         <p class="tx">El videojuego Marvel's Spider-Man ofrece un sistema de mundo abierto en el
@@ -208,7 +234,42 @@
         <img src="../img/spider.jpg" class='imagen'>
     </div>
 
-                <hr style="height:2px;border:none;color:#333;background-color:#333;">
+    <hr style="height:2px; border:none; color:#333; background-color:#333;">
+	<div class='recuadro' id="dos">
+        <h1 style="text-align:center">COMENTARIOS</h1>
+        <br>
+        <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                        if($usuario){
+                        echo "
+
+                        <div id='disqus_thread'></div>
+                        <script>
+    
+                        (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://idgsgamers.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                        
+                        
+                        ";
+                        }else{
+                            echo '
+                            <h3 style="text-align:center">Debes iniciar sesion para dar tu reseñas</h3>
+                            <br>
+                            <a class="hfondo2" href="login.php">Iniciar Sesion</a>
+                        ';
+                        }
+        ?>
+    </div>
+	<div class='recuadro' id="tres">
+    <h1 style="text-align:center">SITIOS OFICIALES</h1>
+	</div>    
+
+                </hr>
+                <hr style="height:5px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="dos">
         <h1 class="tit">Ratchet & Clank: rift Apart</h1><br>
         <p class="tx">Todo detalle del juego ha sido pulido hasta su máxima expresión, incluido el
@@ -233,8 +294,43 @@
     <div class='circulo2' id="tres">
         <img src="../img/ratchet.jpg" class='imagen'>
     </div>
-	
-                <hr style="height:2px;border:none;color:#333;background-color:#333;">
+
+    <hr style="height:2px; border:none; color:#333; background-color:#333;">
+	<div class='recuadro' id="dos">
+        <h1 style="text-align:center">COMENTARIOS</h1>
+        <br>
+        <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                        if($usuario){
+                        echo "
+
+                        <div id='disqus_thread'></div>
+                        <script>
+    
+                        (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://idgsgamers.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                        
+                        
+                        ";
+                        }else{
+                            echo '
+                            <h3 style="text-align:center">Debes iniciar sesion para dar tu reseñas</h3>
+                            <br>
+                            <a class="hfondo2" href="login.php">Iniciar Sesion</a>
+                        ';
+                        }
+        ?>
+    </div>
+	<div class='recuadro' id="tres">
+    <h1 style="text-align:center">SITIOS OFICIALES</h1>
+	</div>    
+
+                </hr>
+                <hr style="height:5px;border:none;color:#333;background-color:#333;">
     <div class='recuadro' id="tres">
         <h1 class="tit">Demon Souls</h1><br>
         <p class="tx">Lo interesante de este remake es que respetaron la estructura del diseño de
@@ -256,8 +352,42 @@
         <img src="../img/demon.jpg" class='imagen'>
     </div>
 
-           
     <hr style="height:2px; border:none; color:#333; background-color:#333;">
+	<div class='recuadro' id="dos">
+        <h1 style="text-align:center">COMENTARIOS</h1>
+        <br>
+        <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                        if($usuario){
+                        echo "
+
+                        <div id='disqus_thread'></div>
+                        <script>
+    
+                        (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://idgsgamers.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                        
+                        
+                        ";
+                        }else{
+                            echo '
+                            <h3 style="text-align:center">Debes iniciar sesion para dar tu reseñas</h3>
+                            <br>
+                            <a class="hfondo2" href="login.php">Iniciar Sesion</a>
+                        ';
+                        }
+        ?>
+    </div>
+	<div class='recuadro' id="tres">
+    <h1 style="text-align:center">SITIOS OFICIALES</h1>
+	</div>    
+
+<hr/>            
+    <hr style="height:5px; border:none; color:#333; background-color:#333;">
 	<div class='recuadro' id="dos">
         <h1 style="text-align:center">COMENTARIOS</h1>
         <br>
@@ -293,31 +423,7 @@
 
 	</div>    
 
-    <hr>
-    <!--Waves Container-->
-<div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-        </g>
-        </svg>
-        </div>
-        <!--Waves end-->
-        
-        </div>
-        <!--Header ends-->
-        
-        <!--Content starts-->
-        <div class="content flex">
-
-
+<hr/>
 <footer class="footer-distributed">
 
         <div class="footer-left">
