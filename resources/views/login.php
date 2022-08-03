@@ -40,13 +40,13 @@
                 </div>
             </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
+            <i class='bx bx-chevron-right toggle boton'></i>
         </header>
 
         <div class="menu-bar">
             <div class="menu">
 
-                <li class="search-box">
+                <li class="search-box" style="display: none">
                     <i class='bx bx-search icon'></i>
                     <input type="text" placeholder="Search...">
                 </li>
@@ -59,31 +59,38 @@
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link xbox">
+                        <a href="xbox.php">
                             <i class='fab fa-xbox icon'></i>
                             <span class="text nav-text">Xbox</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link ps">
+                        <a href="ps.php">
                             <i class='fab fa-playstation icon'></i>
                             <span class="text nav-text">Play Station</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link pc">
+                        <a href="pc.php">
                             <i class='fab fa-steam icon'></i>
                             <span class="text nav-text">PC</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link nintendo">
+                        <a href="nintendo.php">
                             <i class='fas fa-gamepad icon'></i>
                             <span class="text nav-text">Nintendo</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link tienda">
+                        <a href="tienda.php">
+                            <i class='fas fa-shopping-cart icon'></i>
+                            <span class="text nav-text">Tienda</span>
                         </a>
                     </li>
 
@@ -92,12 +99,23 @@
             </div>
 
             <div class="bottom-content">
-                <li class="">
-                    <a href="#">
-                        <i class='fas fa-user-circle icon'></i>
-                        <span class="text nav-text">Iniciar Sesion</span>
-                    </a>
-                </li>
+                
+            <li><a href="info.php">
+                <i class='fas fa-user-circle icon'></i>
+                <span class="text nav-text">
+
+
+                <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo $_SESSION['Usuario'];
+                    }else{
+                    echo 'Iniciar Sesion';
+                    }
+                ?>
+
+                
+                </span>
+            </a></li>
 
                 <li class="mode">
                     <div class="sun-moon">
@@ -115,6 +133,7 @@
         </div>
 
     </nav>
+    <a href="#" class="fas fa-arrow-alt-circle-up icon scroll-top" title="Ir arriba"></a>
 
     <section class="home">
 
@@ -128,7 +147,7 @@
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
             <div class="login-form">
 
-                <form action="sesion.php" method="POST">
+                <form action="login.php" method="POST">
                 <div class="sign-in-htm">
 
                     <?php if(count($errors) > 0): ?>
@@ -148,20 +167,15 @@
                         <input id="pass" name="pass" type="password" class="input" data-type="password" maxlength="25" >
                     </div>
                     <div class="group">
-                        <input id="check" type="checkbox" class="check" checked>
-                        <label for="check"><span class="icon"></span> Mantener sesion iniciada</label>
-                    </div>
-                    <div class="group">
                         <input type="submit" name="login" class="button" value="Iniciar Sesion">
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
-                        <label for="tab-2">No Tienes Cuenta?</a>
                     </div>
                 </div>
                 </form>
 
-                <form action="sesion.php" method="POST">
+                <form action="login.php" method="POST">
                 <div class="sign-up-htm">
 
                     <?php if(count($errors) > 0): ?>
@@ -178,22 +192,21 @@
                     </div>
                     <div class="group">
                         <label for="email" class="label">Correo Electronico</label>
-                        <input id="email" value="<?php echo $email; ?>" name="email" type="text" class="input" maxlength="100">
+                        <input placeholder="example@email.com" id="email" value="<?php echo $email; ?>" name="email" type="text" class="input" maxlength="100">
                     </div>
                     <div class="group">
                         <label for="pass1" class="label">Contraseña</label>
-                        <input id="pass1" name="pass" type="password" class="input" data-type="password" minlength="8" maxlength="25">
+                        <input placeholder="(8 caracteres minimo)" id="pass1" name="pass" type="password" class="input" data-type="password" minlength="8" maxlength="25">
                     </div>
                     <div class="group">
                         <label for="pass2" class="label">Confirmar Contraseña</label>
-                        <input id="pass2" name="passConf" type="password" class="input" data-type="password">
+                        <input placeholder="(8 caracteres minimo)" id="pass2" name="passConf" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
-                        <input type="submit" name="register" class="button" value="Registrarse">
+                        <input type="submit" name="register" class="button hfondo" value="Registrarse">
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
-                        <label for="tab-1">Ya Tienes Cuenta?</a>
                     </div>
                 </div>
 
@@ -213,9 +226,7 @@
           <p class="footer-links">
             <a href="../../public/index.php">Inicio</a>
             ·
-            <a href="#">Nosotros</a>
-            ·
-            <a href="#">Acerca de la página</a>
+            <a href="politica.php">Politica de Privacidad</a>
             
           </p>
   
@@ -223,10 +234,12 @@
   
           <div class="footer-icons">
   
-            <a href="#"><i class='fab fa-facebook-square'></i></a>
-            <a href="#"><i class='fab fa-twitter'></i></i></a>
-            <a href="#"><i class='fab fa-github'></i></i></a>
-            <a href="#"><i class='fab fa-steam'></i></i></a>
+             
+          <a class="tooltip" href="https://www.facebook.com/IDGSGamers-103492925755993"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Facebook</span><i class='fab fa-facebook-square'></i></a>
+            <a class="tooltip" href="https://twitter.com/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Twitter</span><i class='fab fa-twitter'></i></i></a>
+            <a class="tooltip" href="https://github.com/AntonyZuniga/IDGSGamers"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">GitHub</span><i class='fab fa-github'></i></i></a>
+            <a class="tooltip" href="https://store.steampowered.com/?l=spanish"><span style="font-size: 15px; line-height: 23px;" class="tooltiptext">Steam</span><i class='fab fa-steam'></i></i></a>
+  
   
           </div>
   
@@ -238,11 +251,32 @@
   
           <form action="#" method="post">
   
-            <input type="text" name="email" placeholder="Correo Electrónico">
+                
+
+            <input type="email" name="email" placeholder="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo 'Correo Electronico';
+                    }else{
+                    echo 'Correo Electronico';
+                    }
+                ?>"
+                
+                value="<?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                        echo $_SESSION['Correo'];
+                    }else{
+                    echo '';
+                    }
+                ?>"
+                >
+            </input>
             <textarea name="message" placeholder="Mensaje"></textarea>
-            <button>Enviar</button>
-  
-          </form>
+            <button type="submit" name="register">Enviar</button>
+          </form><br><br>
+            <?php 
+            include("../php/ac.php");
+            ?>
+            
   
         </div>
   
@@ -280,6 +314,9 @@ modeSwitch.addEventListener("click" , () =>{
     }
 });
     </script>
+
+<script language="JavaScript" type="text/javascript" src="../js/arriba.js"></script>
+
 </body>
 
 </html>

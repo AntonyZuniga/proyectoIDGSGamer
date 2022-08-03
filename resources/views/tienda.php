@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/titulos.css">
+    <link rel="stylesheet" href="../css/tienda.css">
     
     <!----===== ICONOS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -23,9 +24,10 @@
     <!----===== SCRIPT ===== -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-
 </head>
+
 <body>
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -39,7 +41,7 @@
                 </div>
             </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
+            <i class='bx bx-chevron-right toggle boton'></i>
         </header>
 
         <div class="menu-bar">
@@ -66,7 +68,7 @@
                     </li>
 
                     <li class="nav-link ps">
-                        <a href="#">
+                        <a href="ps.php">
                             <i class='fab fa-playstation icon'></i>
                             <span class="text nav-text">Play Station</span>
                         </a>
@@ -87,7 +89,7 @@
                     </li>
 
                     <li class="nav-link tienda">
-                        <a href="tienda.php">
+                        <a href="#">
                             <i class='fas fa-shopping-cart icon'></i>
                             <span class="text nav-text">Tienda</span>
                         </a>
@@ -134,54 +136,137 @@
     </nav>
     <a href="#" class="fas fa-arrow-alt-circle-up icon scroll-top" title="Ir arriba"></a>
     
-    <section class="home">
+<section class="home">
 
     <div class='recuadro' id="cero">
-    <p class="t2"><a href="">
-    PLAY STATION
+    <p class="t5"><a href="">
+    TIENDA
   </a></p>
 	</div>
 
-    <div class='recuadro' id="uno">
-        <h1 style="text-align:center">Texto info</h1>
-	</div>
-    <hr>
-	<div class='recuadro' id="dos">
-        <h1 style="text-align:center">COMENTARIOS</h1>
-        <br>
-        <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
-                        if($usuario){
-                        echo "
-
-                        <div id='disqus_thread'></div>
-                        <script>
     
-                        (function() {
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://idgsgamers.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                        })();
-                        </script>
+
+
+    <div class='recuadro' id="uno">
+
+    <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
+                    if($usuario){
+                    echo '
+                    
+                    <!-- main section -->
+                    <main id="main" >
+                    
+                    <!-- all categories -->
+                    <section class="categories">
+                        <div class="title-container">
+                            <h1 id="title">CATALOGO</h1>
+                            <button class="fas fa-cart-arrow-down icon boton" type="button" id="cart">  CARRITO</button>
+                        </div>
+                        <div class="card">
+                            <div class="item-container" id="0">
+                                <div class="card-item">
+                                    <img src="../img/fh.png" alt="img" id="card-img">
+                                    <p id="item-name">FORZA Horizon</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 1299</h3>               
+                            </div>
+                    
+                            <div class="item-container" id="1">
+                                <div class="card-item" >
+                                    <img src="../img/sm.png" alt="img" id="card-img">
+                                    <p id="item-name">Spiderman</p>              
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 1499</h3>
+                            </div>
+                    
+                            <div class="item-container" id="2">
+                                <div class="card-item" >
+                                    <img src="../img/lol.png" alt="img" id="card-img">
+                                    <p id="item-name">League of Legends</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 0.1</h3>                
+                            </div>
+                    
+                            <div class="item-container" id="3">
+                                <div class="card-item">
+                                    <img src="../img/mo.png" alt="img" id="card-img">
+                                    <p id="item-name">Super Mario Oddisey                </p>
+                                </div>
+                                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                                <h3 id="item-price">Precio : $ 899</h3>            
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    </main>
+                    <!-- end of main -->
+                    <!-- details page section -->
+                    <div id="details-page">
+                        <div class="details">
+                            <div class="items-detail">
+                                <div class="image-container">
+                                    
+                                    <img src="/images/redmiK20.jpg" alt="" id="details-img">
+                                </div>
+                                <div class="details-card">
+                                    <h2 id="detail-title"></h2>
+                                    <h4 id="detail-price"></h4>
+                                    <p id="spec"><strong><hr><br>Información :</strong>
+                    
+                                        <ul id="detail-info">
+                                            </ul>
+                                    </p>
+                                    <button id="carts">Añadir al carrito</button>
+                                    <button id="buy">Regresar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of page detail -->
+                        <!-- cart list section -->
+                    <div id="cart-container">
                         
+                    <button style="position: absolute;right: 3%; padding:10px 0px 10px 0px;" class="fas fa-cart-arrow-down icon boton" type="button" id="logo">  REGRESAR</button>
+                        <p id="cart-title">Tu <strong>Carrito</strong></p id="cart-title">
+                        <div id="empty-cart">
+                            <h1>Tu carrito esta vacio...</h1>
+                        </div>
+                    
+                        <div id="cart-with-items">
+                            <div class="cart-column">
+                                <h3>Producto</h3>
+                                <h3>Nombre del producto</h3>
+                                <h3>Total </h3>
+                                <h3>Cantidad</h3>
+                                <h3>Eliminar</h3>
+                            </div>
+                            <div id="item-body">
+                            </div>
+                            <div id="total">
+                                <h3 id="total-items"></h3>
+                                <h2 id="total-amount"></h2>
+                                <h3 id="you-saved"></h3>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
                         
-                        ";
-                        }else{
-                            echo '
-                            <h3 style="text-align:center">Debes iniciar sesion para dar tu reseñas</h3>
-                            <br>
-                            <a class="hfondo2" href="login.php">Iniciar Sesion</a>
                         ';
-                        }
-        ?>
-    </div>
-	<div class='recuadro' id="tres">
-    <h1 style="text-align:center">SITIOS OFICIALES</h1>
+                    }else{
+                    echo 'Debes iniciar sesion para ver el catalogo de VideoJuegos!';
+                    }
+                ?>
+        
 
-
-	</div>    
+	<br><br><br><br><br><br><br><br>
 
 <hr/>
+
+
 <footer class="footer-distributed">
 
         <div class="footer-left">
@@ -244,7 +329,7 @@
         </div>
   
  </footer>
-    </section>
+ </section>
     
 
     
@@ -279,7 +364,7 @@ modeSwitch.addEventListener("click" , () =>{
     </script>
 
 <script language="JavaScript" type="text/javascript" src="../js/arriba.js"></script>
-
+<script src="../js/tienda.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 $hostname = 'localhost';
 $username = 'root';
 $password = '';
-$db = 'proyecto';
+$db = 'gaming';
 
 $DBC = mysqli_connect($hostname,$username,$password,$db);
 
