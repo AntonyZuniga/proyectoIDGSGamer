@@ -64,7 +64,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="../../public/index.php">
+                        <a href="../../index.php">
                             <i class='fas fa-home icon'></i>
                             <span class="text nav-text">Inicio</span>
                         </a>
@@ -249,7 +249,7 @@
     </div>
                 </hr>
             <hr style="height:2px;border:none;color:#333;background-color:#333;">
-	<div class='recuadro' id="dos">
+	<div class='recuadro' id="seis">
         <h1 style="text-align:center">COMENTARIOS</h1>
         <br>
         <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
@@ -275,13 +275,7 @@
                         }
         ?>
     </div>
-	<div class='recuadro' id="tres">
-    <h1 style="text-align:center">SITIOS OFICIALES</h1>
-    <h2>La gran Nintendo, la compañía enfocada en consolas portátiles pisa fuerte con la Nintendo Switch, una consola 
-                            que combina lo mejor de la sobremesa y la portabilidad, trayendo innovación a esta nueva generación.</h2>
-
-	</div>
-
+	
     <hr>
     <!--Waves Container-->
 <div>
@@ -314,7 +308,7 @@
           <img class="logof" src="../img/logo.png" alt="">
   
           <p class="footer-links">
-            <a href="../../public/index.php">Inicio</a>
+            <a href="../../index.php">Inicio</a>
             ·
             <a href="politica.php">Politica de Privacidad</a>
             

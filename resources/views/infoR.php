@@ -70,7 +70,7 @@ require_once '../php/authController.php';
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="../../public/index.php">
+                        <a href="../../index.php">
                             <i class='fas fa-home icon'></i>
                             <span class="text nav-text">Inicio</span>
                         </a>

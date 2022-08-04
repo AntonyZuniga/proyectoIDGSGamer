@@ -21,7 +21,7 @@ window.Cliengo.chatConfig = {
   "cliengoMeetings" : "false",
   "chatWindowTitle" : "Chat de ventas",
   "chatWindowInputPlaceholder" : "Escribe un mensaje...",
-  "chatInitialMessage" : "Hola, estoy conectada, de qué modo te puedo ayudar?",
+  "chatInitialMessage" : "Hola Bienvenid@ a IDGSGamers, de qué modo te puedo ayudar?",
   "chatIsWritingMessage" : " está escribiendo...",
   "chatSaluteTimeInSeconds" : 5,
   "avatarImgUrl": "",
