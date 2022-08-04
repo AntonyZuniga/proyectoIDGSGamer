@@ -463,7 +463,7 @@
         border: 0px solid rgb(92, 92, 92);
         width: 46%;
         display: inline-block;
-        height: 70%;
+        height: 65%;
         margin: 1rem;
         padding: 1rem;
         color: var(--text-color);
@@ -491,6 +491,18 @@
         padding: 1rem;
         color: var(--text-color);
         border-radius: 3px;
+    }
+
+    #seis {
+        border: 0px solid rgb(92, 92, 92);
+        width: 98%;
+        display: inline-block;
+        height: 25%;
+        margin: 1rem;
+        padding: 1rem;
+        color: var(--text-color);
+        border-radius: 3px;
+        text-align: center;
     }
     
     a.scroll-top {

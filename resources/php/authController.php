@@ -10,10 +10,11 @@
 
 //REGISTRAR
 if (isset($_POST['register'])) {
-    $username = $_POST['user'];
+    $username = isset($_POST['user']) ? $_POST['user'] : null;
     $email = $_POST['email'];
-    $password = $_POST['pass'];
-    $passwordConf = $_POST['passConf'];
+    $password = isset($_POST['pass']) ? $_POST['pass'] : null;
+    $passwordConf = isset($_POST['passConf']) ? $_POST['passConf'] : null;
+
 
     if (empty($username)) {
         $errors['user'] = "Usuario requerido";
@@ -105,7 +106,7 @@ if (isset($_POST['login'])) {
     
             $_SESSION['message'] = "SESION INICIADA!";
             $_SESSION['alert-class'] = "alert-success";
-            header('Location: ../../public/index.php');
+            header('Location: ../../index.php');
             exit();
         }else{
             $errors['login_fail'] = "Datos incorrectos";
