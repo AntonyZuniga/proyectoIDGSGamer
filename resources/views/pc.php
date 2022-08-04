@@ -55,7 +55,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="../../public/index.php">
+                        <a href="../../index.php">
                             <i class='fas fa-home icon'></i>
                             <span class="text nav-text">Inicio</span>
                         </a>
@@ -166,7 +166,7 @@ En el juego, dos equipos de cinco jugadores luchan en un combate jugador contra 
         </p><br><br><br>
 	</div>
     <div class='circulo4' id="tres">
-        <img src="../img/LUL.png" class='imagen'><br><br><br><br><br>
+        <img src="../img/LUL.png" class='imagen'><br><br><br>
         <p class="sub">Un gran juego que te engancha facilmente</p>
     </div>
                 </hr>
@@ -210,7 +210,7 @@ CS:GO está centrado sobre todo en el modo competitivo. Tras su salida, se acept
         </div>
                 </hr>
             <hr style="height:2px;border:none;color:#333;background-color:#333;">
-	<div class='recuadro' id="dos">
+	<div class='recuadro' id="seis">
         <h1 style="text-align:center">COMENTARIOS</h1>
         <br>
         <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
@@ -239,11 +239,7 @@ CS:GO está centrado sobre todo en el modo competitivo. Tras su salida, se acept
                         }
         ?>
     </div>
-	<div class='recuadro' id="tres">
-    <h1 style="text-align:center">SITIOS OFICIALES</h1>
-
-
-	</div>
+	
 
     <hr>
     <!--Waves Container-->
@@ -277,7 +273,7 @@ CS:GO está centrado sobre todo en el modo competitivo. Tras su salida, se acept
           <img class="logof" src="../img/logo.png" alt="">
   
           <p class="footer-links">
-            <a href="../../public/index.php">Inicio</a>
+            <a href="../../index.php">Inicio</a>
             ·
             <a href="politica.php">Politica de Privacidad</a>
             

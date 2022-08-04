@@ -53,7 +53,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="../../public/index.php">
+                        <a href="../../index.php">
                             <i class='fas fa-home icon'></i>
                             <span class="text nav-text">Inicio</span>
                         </a>
@@ -224,7 +224,7 @@
           <img class="logof" src="../img/logo.png" alt="">
   
           <p class="footer-links">
-            <a href="../../public/index.php">Inicio</a>
+            <a href="../../index.php">Inicio</a>
             ·
             <a href="politica.php">Politica de Privacidad</a>
             

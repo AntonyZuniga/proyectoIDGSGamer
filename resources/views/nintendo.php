@@ -55,7 +55,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="../../public/index.php">
+                        <a href="../../index.php">
                             <i class='fas fa-home icon'></i>
                             <span class="text nav-text">Inicio</span>
                         </a>
@@ -169,7 +169,7 @@
         </p><br><br><br><br>
 	</div>
     <div class='circulo3' id="tres">
-        <img src="../img/Zelda.jpg" class='imagen'><br><br><br><br><br>
+        <img src="../img/Zelda.jpg" class='imagen'><br><br>
         <p class="sub">Ganador al premio de mejor juego del 2017</p>
         </div>
                 </hr>
@@ -205,14 +205,14 @@ Como pasa con otros muchos juegos, si Splatoon no te gustó, Splatoon 2 no te va
         </p><br>
 	</div>
     <div class='circulo3' id="tres">
-        <img src="../img/platano.jpg" class='imagen'><br><br><br><br>
+        <img src="../img/platano.jpg" class='imagen'><br><br>
         <p class="sub">Un juego que promete mucho, pero no cumple.</p>
     </div>
                 </hr>
                 <hr style="height:2px;border:none;color:#333;background-color:#333;">
                 </div> 
     <hr>
-	<div class='recuadro' id="dos">
+	<div class='recuadro' id="seis">
         <h1 style="text-align:center">COMENTARIOS</h1>
         <br>
         <?php $usuario=(!empty($_SESSION['Usuario'])) ? $_SESSION['Usuario'] : NULL;
@@ -241,12 +241,7 @@ Como pasa con otros muchos juegos, si Splatoon no te gustó, Splatoon 2 no te va
                         }
         ?>
     </div>
-	<div class='recuadro' id="tres">
-    <h1 style="text-align:center">SITIOS OFICIALES</h1>
-
-
-	</div>
-        
+	
     <hr>
     <!--Waves Container-->
 <div>
@@ -278,7 +273,7 @@ Como pasa con otros muchos juegos, si Splatoon no te gustó, Splatoon 2 no te va
           <img class="logof" src="../img/logo.png" alt="">
   
           <p class="footer-links">
-            <a href="../../public/index.php">Inicio</a>
+            <a href="../../index.php">Inicio</a>
             ·
             <a href="politica.php">Politica de Privacidad</a>
             
